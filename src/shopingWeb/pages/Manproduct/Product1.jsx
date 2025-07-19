@@ -1,0 +1,80 @@
+import React, { useEffect, useRef, useState } from "react"
+
+import {Link, useParams} from 'react-router-dom'
+import ManProduct from "../ManProduct"
+import './pro.css'
+import { items } from "../Data"
+
+function Product1 ({cart, setCart}){
+    const addTocart = (id,price,about,image)=>{
+        const obj={
+            id,price,about,image
+        }
+        setCart(...cart, obj);
+        console.log("cart element=",cart)
+    }
+
+
+    const{id}=useParams()
+    const [product, setPrduct]=useState({})
+    const[releted, setReleted]= useState()
+    useEffect(()=>{
+        
+        const finalProduct= items.filter((product)=> product.id==id)
+           setPrduct(finalProduct[0]);
+           const reletedProduct=items.filter((p)=> p.off===product.off ||p.color===product.color||p.category===product.category)
+        //    console.log(reletedProduct)
+        setReleted(reletedProduct)
+       
+    },[id,product.price])
+        
+    
+
+   
+    return(
+        <>
+        
+        <div className="product">
+            <div className="section" >
+               
+            <img src={product.image} alt=""/>
+            <div className="about">
+                <h2>Classic look</h2>
+                <p>{product.about}</p>
+                <p>Ratings -</p>
+                <hr />
+                <h2 id="price">Rs.{product.price}</h2>
+                <p> <del>MRP {product.del}</del> <i>({product.off}% OFF)</i></p>
+                <h3>Select Size</h3>
+                <input type="checkbox" name="" id="" />40
+                <input type="checkbox" name="" id="" />42
+                <input type="checkbox" name="" id="" />44
+                <hr/>
+                <button id="add" onClick={()=>addTocart(product.id, product.price, product.about, product.image)}>ADD To CART</button>
+                <button>BUY NOW</button>
+            </div>
+            </div>
+           
+        </div>
+        <h2 id="Releted">Releted Product</h2>
+        <div className="reletedProduct">
+        {
+          Array.isArray(releted)&&releted.map((product)=>{
+             return(
+                 <>
+                   <div className="iteam" >
+                   <Link to={`/product1/${product.id}`}>
+                  <img src={product.image} alt="img"/></Link>
+                    <del>{product.del}</del>
+                    <i>({product.off}% off)</i>
+                    <p>Rs.{product.price}</p>
+                </div>     
+                 </>
+             )
+            })}
+            </div>
+        
+        </>
+    )
+}
+export default Product1

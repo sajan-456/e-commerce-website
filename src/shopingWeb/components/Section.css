@@ -1,0 +1,791 @@
+.otbanner{
+    height: 440px;
+    width: 100%;
+    overflow:hidden;
+    /* text-align: center; */
+
+}
+.banner{
+   display: flex;
+   width: 400%;
+   margin:20px 0px;
+   align-items: center;
+   animation:abc 10s  linear infinite;
+}
+
+.banner1{
+  
+   height: 400px;
+   width: 88%;
+   display: flex;
+   object-fit: cover;
+   margin: 0px 1.5%;
+   background-color:rgba(247, 159, 65, 0.529);
+   align-items: center;
+   justify-content: space-evenly;
+   border-radius: 20px;
+   
+}
+
+.Bpart1{
+   height: 340px;
+   width: 35%; 
+   padding-left: 100px;
+}
+.Bpart1 h1{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: rgb(35, 35, 33);
+    text-shadow: 0px 3px 1px darkgray;
+}
+.Bpart1 h4{
+    margin-top: 10px;
+    font-size: 20px;
+    color:rgb(6, 89, 25);
+}
+.Bpart1 button{
+    height: 35px;
+    width: 120px;
+    font-size: 15px;
+    background-color: #1f1930;
+    border-radius: 5px;
+    border: none;
+    color: rgb(255, 252, 252);
+    margin: 10px 0px;
+}
+.banner1 img{
+    height: 100%;
+    width: 40%; 
+}
+#Bpart2{
+    height: 250px;
+    width: 50%;
+    padding-left: 150px;
+}
+#banner2{
+    background-color: rgb(213, 213, 124);
+    padding: 0px;
+}
+#banner2 h3{
+    color: #156d16;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#banner2 img{
+        height: 100%;
+        width: 48%;
+}
+#Bpart3{
+    height: 250px;
+    width: 50%;
+    padding-left: 150px;
+}
+#banner3{
+    background-color: rgb(153, 172, 235);
+    padding: 0px;
+}
+#banner3 h3{
+    color: #1e8612;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+#banner3 img{
+        height: 100%;
+        width: 48%;
+}
+#Bpart4{
+    height: 250px;
+    width: 40%;
+    padding-left: 150px;
+}
+#banner4{
+    background-color: rgb(111, 234, 160);
+    padding: 0px;
+}
+#banner4 h1{
+    color: #1f1930;
+}
+#banner4 h3{
+    color: #0f6a11;
+    font-weight: 300;
+    font-size: 30px;
+}
+#banner4 img{
+        height: 100%;
+        width: 40%;
+        padding-right: 100px;
+}
+.brandcover{
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+}
+.wrapBrand{
+    height: 70px;
+    width: 200%;
+    display: flex;
+}
+.brandrow{
+    height: 70px;
+    width: 50%;
+    /* margin: 30px 5%; */
+    margin: 0px 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* animation: Brand 10s linear infinite; */
+}
+.brandrow img{
+    height: 40px;
+    width: 160px;
+    object-fit: cover;
+}
+#brand1{
+    height: 50px;
+    width: 60px;
+}
+
+.subBanner{
+    height: 290px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding: 5px; */
+    border: none;
+}
+.subBanner p{
+    color:aqua;
+    position: relative;
+    top:10px
+}
+.BG1{
+    height: 220px;
+    width: 23%;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: url(../assets/home/2025-06-23.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:last baseline;
+    
+}
+.BG2{
+    height: 230px;
+    width: 23%;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: url(../assets/home/Sscreen3.jpeg);
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: last baseline;
+    
+}
+.BG3{
+    height: 230px;
+    width: 23%;
+    padding: 5px;
+    border-radius: 20px;
+    background-image: url(../assets/home/2025-06-230.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:last baseline;
+}
+.tittle{
+    height: 125px;
+    width: 100%;
+    text-align:right;
+    text-align:center ;
+   
+}
+.tittle button{
+    background-color: #ffffff41;
+    margin: 10px;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+.tittle button:hover{
+    background-color: rgb(201, 201, 196);
+    transform: scale(1.2);
+}
+.tittle h2{
+    font-weight: 300;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.856);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.byCat{
+    height: 400px;
+    width: 100%;
+    margin: 40px 0px;
+    text-align: center;
+}
+.topcat{
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.byCat h2{
+    width: 500px;
+    background-image: url("../assets/home/Sscreen3.jpeg");
+    background-size: contain;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    
+
+
+}
+.byCat p{
+    height: 50px;
+    margin-top: 5px;
+}
+
+.catS{
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    /* padding: 0px 50px; */
+    
+}
+
+.cat1{
+    background-image: url(../assets/home/man.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+}
+.cat2{
+    background-image: url(../assets/home/womanfation.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+   
+}
+.cat3{
+    background-image: url(../assets/home/sareei.jpeg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+   
+}
+.cat4{
+    background-image: url(../assets/home/kid00.jpeg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+   
+}
+.cat5{
+    background-image: url(../assets/home/Sport2.jpeg);
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+   
+}
+.catS h5{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.cat{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+.promies1{
+    height: 90px;
+    margin: 0px 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.pro1{
+    height: 60px;
+    display: flex;
+    padding: 5px;
+    /* background-color: #ffffffbb; */
+}
+.promies1 img{
+    height: 50px;
+    margin:0px  5px;
+    object-fit: cover;
+}
+.trend1{
+    height: 450px;
+    text-align: center;
+    padding-top: 40px;
+}
+.trend1 h3{
+    font-size: 30px;
+}
+.trendImg1{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.trendImg1 img{
+       height: 310px;
+       width: 270px;
+       border-radius: 20px;
+       padding: 10px;
+       background-color: darkgray;
+}
+.trendImg1 img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.bySellers{
+    /* height: 1500px; */
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+}
+#sell{
+    margin: 10px;
+    font-size: 35px;
+    color: brown;
+}
+.bySellers p{
+    margin-bottom: 30px;
+}
+.sellers{
+    /* height: 1400px; */
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    gap:20px;
+    padding: 0px 6%;
+    align-items: center;
+    
+   
+}
+.sellers img{
+    height: 300px;
+    width: 19%;
+    border: 1px solid lightgray;
+    object-fit: cover;
+    box-shadow: 1px 2px 2px 3px lightgray;
+    padding: 10px;
+    background-color: blueviolet;
+}
+ @keyframes abc {
+            0%, 15% {
+                transform: translateX(0);
+            }
+           
+           
+            20%, 40% {
+                transform: translateX(-25%);
+            }
+           
+            45%, 65% {
+                transform: translateX(-50%);
+
+            }
+           
+           
+            72%, 99.9% {
+                transform: translateX(-75%);
+            }
+            
+           
+            100% {
+                transform: translateX(0);
+            }
+            
+        }
+ @keyframes Brand {
+         15%  {
+              transform: translateX(0);
+           }
+          99.9%{
+            transform: translateX(-100%);
+          }
+           100%{
+            transform: translateZ(0);
+           }
+    } 
+    @media  screen and (max-width:480px) {
+       
+        .otbanner{
+            height: 300px;
+        }
+        .banner1{
+            width: 100%;
+            height: 250px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .Bpart1{
+            height: 230px;
+            width: 50%;
+            padding-left: 20px;
+        }
+        .Bpart1 h1{
+            font-size: 25px;
+        }
+        .Bpart1 button{
+            width: 100px;
+        }
+        .Bpart1 h4{
+            font-size: 15px;
+
+        }
+        .banner1 img{
+            height: 250px;
+            width: 80%;
+        }
+        #banner2{
+            width: 100%;
+            height: 250px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        #Bpart2{
+            height: 180px;
+            width: 50%;
+            padding-left: 20px;
+        }
+        #banner2 img{
+            height: 250px;
+            width: 60%;
+        }
+        #Bpart2 button{
+            width: 100px;
+            height: 30px;
+        }
+        #Bpart2 h3{
+            font-size: 15px;
+
+        } #banner3{
+            width: 100%;
+            height: 250px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        #Bpart3{
+            height: 180px;
+            width: 50%;
+            padding-left: 20px;
+        }
+        #banner3 img{
+            height: 250px;
+            width: 60%;
+        }
+        #Bpart3 button{
+            width: 100px;
+            height: 30px;
+        }
+        #Bpart3 h3{
+            font-size: 15px;
+
+        }
+        #banner4{
+            width: 100%;
+            height: 250px;
+            border-radius: 0px;
+            margin: 0px;
+            padding: 0px;
+        }
+        #Bpart4{
+            height: 180px;
+            width: 50%;
+            padding-left: 20px;
+        }
+        #banner4 img{
+            height: 250px;
+            width: 55%;
+        }
+        #Bpart4 button{
+            width: 100px;
+            height: 30px;
+        }
+        #Bpart4 h3{
+            font-size: 15px;
+
+        }
+        .brandrow{
+            height: 50px;
+            margin: 0px;
+        }
+        .brandrow img{
+            width: 100px;
+        
+        }
+        #brand1{
+            height: 40px;
+            width: 50px;
+        }
+        #chIcon{
+            display: none;
+        }
+        .subBanner{
+            height: 800px;
+            flex-direction: column;
+        }
+        .BG1{
+            width: 80%;
+        }
+        .BG2{
+            width: 80%;
+        }
+        .BG3{
+            width: 80%;
+        }
+        .byCat{
+            height: 630px;
+        }
+        .catS{
+            flex-wrap: wrap;
+            height: 550px;
+            padding: 0px;
+        }
+        .cat1{
+            height: 240px; 
+            width: 180px;
+            border-radius: 10px;
+        }
+        .cat2{
+            height: 240px; 
+            width: 180px;
+            border-radius: 10px;
+        }
+        .cat3{
+            height: 240px; 
+            width: 180px;
+            border-radius: 10px;
+        }
+        .cat4{
+            height: 240px; 
+            width: 180px;
+            border-radius: 10px;
+        }
+        .cat5{
+            height: 240px; 
+            width: 180px;
+            border-radius: 10px;
+        }
+        .promies1{
+            margin: 0px;
+            flex-wrap: wrap;
+            height: 150px;
+        }
+        .promies1 p{
+            font-size: 15px;
+        }
+        #hide{
+            display: none;
+        }
+        .trend1{
+           
+           height: 600px;
+           padding: 0px;
+        }
+        .trendImg1{
+            flex-wrap: wrap;
+            height: 550px;
+        }
+        .trendImg1 img{
+            height: 220px;
+            width: 42%;
+            padding: 1px;
+        }
+        .bySellers{
+            /* height: 1500px; */
+            padding: 0px;
+            display: none;
+        }
+        .sellers{
+            /* height: 1300px; */
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0px;
+            margin-bottom: 20px;
+        }
+        .sellers img{
+            width: 45%;
+            height: 280px;
+            padding: 2px;
+        }
+        
+      
+        }  
+        @media screen and (min-width:481px) and (max-width:998px){
+            .banner1{
+                height: 350px;
+            }
+            .banner1 img{
+                width: 60%;
+            }
+            .Bpart1{
+                padding-left: 10px;
+               }
+               #Bpart2{
+                padding: 10px;
+               }
+               #Bpart3{
+                padding: 10px;
+               }
+               #Bpart4{
+                padding: 10px;
+               }
+               .subBanner{
+                flex-direction: column;
+                height: 1150px;
+                gap: 20px;
+               }
+               .brandrow{
+                margin: 0px 3%;
+               }
+                #chIcon{
+                display: none;
+               }
+               .BG1{
+                height: 300px;
+                width: 75%;
+
+               }
+               .BG2{
+                height: 300px;
+                width: 75%;
+               }
+               .BG3{
+                height: 300px;
+                width: 75%;
+               }
+               .byCat{
+                height: 870px;
+            }
+            .catS{
+                flex-wrap: wrap;
+                height: 750px;
+                padding: 0px;
+                justify-content: center;
+                gap:25px;
+            }
+            .cat1{
+                height: 340px; 
+                width: 280px;
+                border-radius: 10px;
+            }
+            .cat2{
+                height: 340px; 
+                width: 280px;
+                border-radius: 10px;
+            }
+            .cat3{
+                height: 140px; 
+                width: 160px;
+                border-radius: 10px;
+            }
+            .cat4{
+                height: 340px; 
+                width: 280px;
+                border-radius: 10px;
+            }
+            .cat5{
+                height: 340px; 
+                width: 280px;
+                border-radius: 10px;
+            }
+            .promies1{
+                margin: 0px;
+                flex-wrap: wrap;
+                height: 130px;
+            }
+            .promies1 p{
+                font-size: 18px;
+            }
+            #hide{
+                display: none;
+            }
+            .pro1 h4{
+                 font-size: 24px;
+            }
+            .pro1 img{
+                height: 60px;
+            }
+            .trend1{
+                height: 900px;
+            }
+            .trend1 h3{
+                color:#f55314;
+                font-size: 40px;
+                margin: 10px;
+            }
+            .trendImg1{
+                height: 850px;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .trendImg1 img{
+                height: 42%;
+                width: 40%;
+            }
+              .bySellers{
+            /* height: 1500px; */
+            padding: 0px;
+            
+        }
+        .sellers{
+            /* height: 1300px; */
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0px;
+            margin-bottom: 20px;
+        }
+        .sellers img{
+            width: 45%;
+            height: 380px;
+            padding: 2px;
+        }
+        }
