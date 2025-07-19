@@ -17,7 +17,7 @@ import Search from "./shopingWeb/components/Search"
 // import About from './pages/About'
 // import Contact from "./pages/Contact"
 import { items } from "./shopingWeb/pages/Data"
-import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import {HashRouter, Route, Routes} from 'react-router-dom'
 
 
 
@@ -26,7 +26,7 @@ function App() {
   const [cart, setCart] =useState([])
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
   
    <Header/>
 
@@ -55,7 +55,7 @@ function App() {
     </Routes>
    <Footer/>
    
-    </BrowserRouter>
+    </HashRouter>
      
     </>
   )
