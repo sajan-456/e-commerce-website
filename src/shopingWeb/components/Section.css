@@ -452,88 +452,90 @@
     @media  screen and (max-width:480px) {
        
         .otbanner{
-            height: 300px;
+            height: 240px;
+            
         }
         .banner1{
-            width: 100%;
-            height: 250px;
-            border-radius: 0px;
-            margin: 0px;
-            padding: 0px;
+            width: 88%;
+            height: 200px;
+            border-radius: 10px;
+            margin: 0px 1.4%;
         }
         
         .Bpart1{
-            height: 230px;
+            height: 180px;
             width: 50%;
             padding-left: 20px;
         }
         .Bpart1 h1{
-            font-size: 25px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .Bpart1 button{
-            width: 100px;
+            width: 80px;
+            height: 30px;
+            font-size: 10px;
         }
         .Bpart1 h4{
             font-size: 15px;
 
         }
         .banner1 img{
-            height: 250px;
-            width: 80%;
+            height: 200px;
+            width: 70%;
         }
         #banner2{
-            width: 100%;
-            height: 250px;
-            border-radius: 0px;
-            margin: 0px;
-            padding: 0px;
+             width: 88%;
+            height: 200px;
+            border-radius: 10px;
+            margin: 0px 1.4%;
         }
         #Bpart2{
-            height: 180px;
+            height: 150px;
             width: 50%;
             padding-left: 20px;
         }
         #banner2 img{
-            height: 250px;
-            width: 60%;
+            height: 200px;
+            width: 70%;
         }
         #Bpart2 button{
-            width: 100px;
+             width: 80px;
             height: 30px;
+            font-size: 10px;
         }
         #Bpart2 h3{
             font-size: 15px;
 
-        } #banner3{
-            width: 100%;
-            height: 250px;
-            border-radius: 0px;
-            margin: 0px;
-            padding: 0px;
+        }  #banner3{
+             width: 88%;
+            height: 200px;
+            border-radius: 10px;
+            margin: 0px 1.4%;
         }
         #Bpart3{
-            height: 180px;
+            height: 150px;
             width: 50%;
             padding-left: 20px;
         }
         #banner3 img{
-            height: 250px;
-            width: 60%;
+            height: 200px;
+            width: 70%;
         }
         #Bpart3 button{
-            width: 100px;
+             width: 80px;
             height: 30px;
+            font-size: 10px;
         }
         #Bpart3 h3{
             font-size: 15px;
 
         }
-        #banner4{
-            width: 100%;
-            height: 250px;
-            border-radius: 0px;
-            margin: 0px;
-            padding: 0px;
+      #banner4{
+             width: 88%;
+            height: 200px;
+            border-radius: 10px;
+            margin: 0px 1.4%;
         }
         #Bpart4{
             height: 180px;
@@ -541,16 +543,20 @@
             padding-left: 20px;
         }
         #banner4 img{
-            height: 250px;
-            width: 55%;
+            height: 200px;
+            width: 70%;
         }
         #Bpart4 button{
-            width: 100px;
+             width: 80px;
             height: 30px;
+            font-size: 10px;
         }
         #Bpart4 h3{
             font-size: 15px;
 
+        }
+        .brandcover{
+            height: 50px;
         }
         .brandrow{
             height: 50px;
@@ -581,36 +587,48 @@
             width: 80%;
         }
         .byCat{
-            height: 630px;
+            height: 530px;
+        }
+        .byCat p{
+            height:20px;
+        }
+        .topcat{
+            height: 50px;
+        }
+        .topcat h2 {
+            font-size: 40px;
         }
         .catS{
             flex-wrap: wrap;
-            height: 550px;
+            height: 510px;
             padding: 0px;
         }
         .cat1{
-            height: 240px; 
-            width: 180px;
+            height: 220px; 
+            width: 160px;
             border-radius: 10px;
         }
+        .cat1 h5{
+            background-color: #6c6c6d5c;
+        }
         .cat2{
-            height: 240px; 
-            width: 180px;
+            height: 220px; 
+            width: 160px;
             border-radius: 10px;
         }
         .cat3{
-            height: 240px; 
-            width: 180px;
+            height: 220px; 
+            width: 160px;
             border-radius: 10px;
         }
         .cat4{
-            height: 240px; 
-            width: 180px;
+            height: 220px; 
+            width: 160px;
             border-radius: 10px;
         }
         .cat5{
-            height: 240px; 
-            width: 180px;
+            height: 220px; 
+            width: 160px;
             border-radius: 10px;
         }
         .promies1{

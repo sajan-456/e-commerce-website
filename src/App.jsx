@@ -41,7 +41,6 @@ function App() {
         <Route element={<Product1/>} cart={cart} setCart={setCart} path="/product1/:id" />
         <Route element={<Profile/>} path="/profile"/>
         <Route element={<Login/>} path="/login"/>
-
         
             
       {/* <Route element={<Layout/>}path="/">

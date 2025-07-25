@@ -39,19 +39,25 @@ function Product1 ({cart, setCart}){
                
             <img src={product.image} alt=""/>
             <div className="about">
+                <div className="about1">
                 <h2>Classic look</h2>
                 <p>{product.about}</p>
                 <p>Ratings -</p>
                 <hr />
-                <h2 id="price">Rs.{product.price}</h2>
+               
                 <p> <del>MRP {product.del}</del> <i>({product.off}% OFF)</i></p>
-                <h3>Select Size</h3>
+                <h2 id="price">Rs.{product.price}</h2>
+                <h3>Size</h3>
                 <input type="checkbox" name="" id="" />40
                 <input type="checkbox" name="" id="" />42
                 <input type="checkbox" name="" id="" />44
-                <hr/>
-                <button id="add" onClick={()=>addTocart(product.id, product.price, product.about, product.image)}>ADD To CART</button>
+                </div>
+
+                <div className="button">
+                   <button id="add" onClick={()=>addTocart(product.id, product.price, product.about, product.image)}>ADD To CART</button>
                 <button>BUY NOW</button>
+                </div>
+               
             </div>
             </div>
            
