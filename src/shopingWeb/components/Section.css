@@ -1,7 +1,7 @@
 .otbanner{
     height: 440px;
     width: 100%;
-    overflow:hidden;
+    overflow:scroll;
     /* text-align: center; */
 
 }
@@ -10,7 +10,7 @@
    width: 400%;
    margin:20px 0px;
    align-items: center;
-   animation:abc 10s  linear infinite;
+   /* animation:abc 10s  linear infinite; */
 }
 
 .banner1{

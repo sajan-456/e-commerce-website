@@ -91,8 +91,8 @@ function ManProduct({items}){
           checked={isChecked}
           onChange={handleCheckBoxChange}/>
           <label htmlFor="S-Icon" id="Icon-position">
-          <LiaSortSolid className="S-Logo"/>
-          SORT
+          <LiaSortSolid className="S-Logo"/><p>SORT</p>
+          
           </label>
          
           </div>
@@ -103,7 +103,7 @@ function ManProduct({items}){
           onChange={handleCheckBoxChange}/>
           <label htmlFor="F-Icon" id="Icon-position">
           <PiSlidersHorizontalLight className="F-Logo"/>
-           FILTER
+           <p>FILTER</p> 
           </label>
           </div>
           
@@ -117,10 +117,13 @@ function ManProduct({items}){
                  <>
                    <div className="iteam" key={products.id}>
                 <Link to={`/product1/${products.id}`}>  <img src={products.image} alt="img"/></Link>
+                    <div className="ProductInformation">
                     <del>{products.del}</del>
                     <i>({products.off}% off)</i>
                     <p>Rs.{products.price}</p>
                     <p id="error">{products.error}</p>
+                    </div>
+                   
                 </div>     
                  </>
              )
