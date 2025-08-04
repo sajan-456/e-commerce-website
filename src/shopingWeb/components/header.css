@@ -23,7 +23,7 @@ header{
     position: sticky;
     box-shadow: 0px 0px 2px 1px lightgray;
     top:0px;
-    z-index: 1;
+    z-index: 2;
 
 }
 .logo{
@@ -57,10 +57,14 @@ header img{
     text-decoration: none;
     color: rgb(11, 11, 11);
     font-size: 22px;
-  
+    height: 20px;
+    padding:5px 15px;
+    padding-bottom: 10px;
 }
 .nav:hover{
-    color: rgb(30, 86, 146);
+    /* color: rgb(30, 86, 146); */
+    background-color: #11111117;
+    border-radius: 5px;
 }
 .newNav{
     display: none;
@@ -79,7 +83,7 @@ header img{
     width: 430px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0px 1px 2px 2px rgb(162, 162, 162);
+    box-shadow: 0px 1px 4px 2px rgb(223, 222, 222);
     color: #111111;
     padding-left: 10px;
     display: flex;
@@ -90,6 +94,9 @@ header img{
     width: 88%;
     border:0.5px solid white;
     margin: 0px;
+}
+.search:hover{
+    box-shadow:0px 1px 4px 2px rgba(242, 162, 229, 0.795) ;
 }
 #icon{
     color: #5c5b5b;
@@ -137,7 +144,7 @@ a{
 }
 @media  screen and (max-width:450px) {
 header{ 
-    height: 70px;
+    height: 50px;
     flex-wrap: wrap;
     margin-bottom: 55px;
     justify-content: space-around;
@@ -149,8 +156,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:35px;
+    gap:25px;
     margin-right: 25%;
+    margin-left: 0px;
 }
 #listI{
     display: block;

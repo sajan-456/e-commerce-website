@@ -6,7 +6,8 @@ import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { CiHeart } from "react-icons/ci";
 import { FaList } from 'react-icons/fa';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { use } from 'react';
 
 function Header(){
     const navigate=useNavigate();
@@ -22,7 +23,23 @@ function Header(){
     function handleCheckBoxChange(e){
         settChecked(e.target.checked);
     };
-
+//  click tab
+      const divElement = useRef();
+    
+      useEffect(()=>{
+         if (divElement.current) {
+      divElement.current.style.backgroundColor = "none";
+        
+    }
+       
+     },[1])
+     function changeColor(){
+     if (divElement.current) {
+      divElement.current.style.backgroundColor = "#FF000077";
+       divElement.current.style.borderRadius=  '5px'  
+    }
+     }
+    
     return(
         <>
         <header>
@@ -45,7 +62,8 @@ function Header(){
             <p>Explore more by Categories</p>
             </div>
             
-            <Link to={'/man'} className='nav' >Man</Link> 
+            <Link to={'/man'} className='nav'ref={divElement} onClick={changeColor} >
+            Man</Link> 
             <Link to={"/women"}className='nav' >Women</Link> 
             <Link to={"/kids"}className='nav' >Kids</Link>
             <Link to={'/manproduct'} className='newNav' id='man'>Man</Link> 

@@ -64,7 +64,7 @@ input{
     height: 335px;
     width: 20.5%;
     background-color:white;
-    
+    text-align: center;
     padding-top: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 2px 2px lightgray;
@@ -79,6 +79,7 @@ input{
 .ProductInformation{
   margin-left: 10px;
   font-family:sans-serif;
+  text-align: left;
 }
 del{
     color: rgb(138, 137, 137);
