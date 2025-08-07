@@ -6,6 +6,7 @@ import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { CiHeart } from "react-icons/ci";
 import { FaList } from 'react-icons/fa';
+import { IoIosArrowForward } from "react-icons/io";
 import { useState, useRef, useEffect } from 'react';
 import { use } from 'react';
 
@@ -66,11 +67,21 @@ function Header(){
             Man</Link> 
             <Link to={"/women"}className='nav' >Women</Link> 
             <Link to={"/kids"}className='nav' >Kids</Link>
-            <Link to={'/manproduct'} className='newNav' id='man'>Man</Link> 
-            <Link to={"/women"}className='newNav' id='women'>Women</Link> 
-            <Link to={"/kids"}className='newNav' id='kide'>Kids</Link>
+
+            <Link to={'/manproduct'} className='newNav' id='man'>
+            <h3 className='tag'>Man</h3> <h3 className='arrow'><IoIosArrowForward /></h3> 
+            </Link> 
+            <Link to={"/women"}className='newNav' id='women'>
+            <h3 className="tag">Woman</h3><h3 className='arrow'><IoIosArrowForward /></h3>
+            </Link> 
+            <Link to={"/kids"}className='newNav' id='kide'>
+            <h3 className="tag">Kid's</h3><h3 className='arrow'><IoIosArrowForward /></h3>
+            </Link>
+            <Link to={"/login"}className='newNav' id='login'>
+              <h2>Login</h2>
+            </Link>
           
-        </div>
+        </div> 
 
 
         <form

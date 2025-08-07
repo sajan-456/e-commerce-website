@@ -31,7 +31,7 @@ import Tbrand4 from '../assets/home/lower1.jpeg'
 import homebanner from '../assets/home/homeBanner.png'
 import homebanner2 from '../assets/home/homeBanner3.png'
 import homebanner3 from '../assets/home/homeBanner4.png'
-
+import { datas } from '../pages/ShopBy'
 import { Link } from "react-router-dom"
 import { SwiperSlide, Swiper } from 'swiper/react'
 import 'swiper/css';
@@ -40,12 +40,19 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 // import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Section.css'
+import { useEffect, useState } from 'react'
 function Section() {
+
+  const [data, setData] = useState([])
+  useEffect((e) => {
+    setData(datas)
+  }, [])
+  console.log(data)
   return (
     <>
-    
+
       <div className="otbanner">
-      
+
         <Swiper className='mainSwiper' navigation={true} pagination={true} autoplay={true} slidesPerView={1} spaceBetween={0} modules={[Navigation, Pagination, Autoplay]} >
           <SwiperSlide className='swiperSlide'>
             <div className="banner1">
@@ -103,36 +110,37 @@ function Section() {
       </div>
 
       {/* <!-- brandrow --> */}
-      
-       
-          <div className="brandrow">
 
-            <img src={brand1} alt="" id="brand1" />
-            <img src={brand2} alt="" />
-            <img src={brand4} alt="" id='chIcon' />
-            <img src={brand5} alt="" />
-            <img src={brand3} alt="" />
 
-          </div>
-         
+      <div className="brandrow">
+
+        <img src={brand1} alt="" id="brand1" />
+        <img src={brand2} alt="" />
+        <img src={brand4} alt="" id='chIcon' />
+        <img src={brand5} alt="" />
+        <img src={brand3} alt="" />
+
+      </div>
+
 
       <div className="slideSwiper">
-        <Swiper className='mainSwiper' 
-        navigation={true} pagination={true} 
-        autoplay={true}  spaceBetween={0} 
-        modules={[Navigation, Pagination, Autoplay]}
-        slidesPerView={3}
-         breakpoints={{
-          // When window width is <= 768px (mobile)
-          350: {
-            slidesPerView: 2,
-            spaceBetween: 0,
-          },
-           // When window width is <= 768px (mobile)
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },}}>
+        <Swiper className='mainSwiper'
+          navigation={true} pagination={true}
+          autoplay={true} spaceBetween={0}
+          modules={[Navigation, Pagination, Autoplay]}
+          slidesPerView={3}
+          breakpoints={{
+            // When window width is <= 768px (mobile)
+            350: {
+              slidesPerView: 2,
+              spaceBetween: 0,
+            },
+            // When window width is <= 768px (mobile)
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 5,
+            },
+          }}>
           <SwiperSlide className='swiperslide'>
             <div className="BG1">
               <Link to={"/man"}>
@@ -182,58 +190,123 @@ function Section() {
         </Swiper></div>
 
       <div className="byCat">
-
-        <h2>Top Catagery</h2>
-
-        <p>Shop by trending Catagery of the season</p>
+        <div className="topCatagoryHeading">
+          <h2>Top Catagery</h2>
+          <p>Shop by trending Catagery of the season</p>
+        </div>
 
         <div className="catS">
-          <Link to={"/man"}>
-            <div className="cat1">
-              <h5>Mens Fation's</h5></div>
-          </Link>
-          <Link to={"/women"}>
-            <div className="cat2">
-              <h5>Womans Fation</h5></div></Link>
+          <Swiper
+            navigation={true} pagination={false}
+            autoplay={true}
+            modules={[Navigation, Pagination, Autoplay]}
+            slidesPerView={5}
+            breakpoints={{
+              // When window width is <= 768px (mobile)
+              350: {
+                slidesPerView: 3.2,
+                spaceBetween: 0,
+              },
+              460: {
+                slidesPerView: 3.4,
+              },
+              // When window width is <= 768px (mobile)
+              768: {
+                slidesPerView: 3.2,
+                spaceBetween: 5,
+              },
+              1068: {
+                slidesPerView: 3.6,
+                spaceBetween: 4,
+              },
+              1188: {
+                slidesPerView: 4.3,
+                spaceBetween: 4,
+              },
+            }}
+          >
+            <SwiperSlide>
+              <Link to={"/man"}>
+                <div className="cat1">
+                  <div className="catTittle">
+                    <h3>Under Rs.499</h3>
+                    <del>Rs.1200</del>
+                    <b> 499</b>
+                  </div>
+                </div>
+              </Link>
+            </SwiperSlide>
 
-          {/* <Link to={"/women"}>
-             <div className="cat3"> 
-               <h5>50% Off on<br/>
-               Womans special</h5></div> </Link> */}
+            <SwiperSlide>
+              <Link to={"/women"}>
+                <div className="cat2">
+                  <div className="catTittle">
+                    <h3>Under Rs.799</h3>
+                    <del>Rs.2500</del>
+                    <b> 799</b>
+                  </div>
+                </div></Link>
+            </SwiperSlide>
 
-          <Link to={"/kids"}>
-            <div className="cat4">
-              <h5>Kid's special</h5></div></Link>
-          <Link to={"/man"}>
-            <div className="cat5">
-              <h5>10% Off on<br />Sport's Material </h5></div></Link>
+            <SwiperSlide>
+              <Link to={"/kids"}>
+                <div className="cat4">
+                  <div className="catTittle">
+                    <h3>Under Rs.499</h3>
+                    <del>Rs.1500</del>
+                    <b> 499</b>
+                  </div>
+                </div></Link>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Link to={"/man"}>
+                <div className="cat5">
+                  <div className="catTittle">
+                    <h3>Under Rs.499</h3>
+                    <del>Rs.1500</del>
+                    <b> 499</b></div>
+                </div></Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link to={"/man"}>
+                <div className="cat3">
+                  <div className="catTittle">
+                    <h3>Under Rs.399</h3>
+                    <del>Rs.1200</del>
+                    <b> 399</b></div>
+                </div></Link>
+            </SwiperSlide>
+          </Swiper>
+
+
         </div>
       </div>
 
       <div className="promies1">
-        <div className="pro1">
+        <div className="pro01">
           <img src={delivery} alt="" />
           <div>
             <h4>Free Delivery </h4>
             <p>On order above $25</p></div>
         </div>
-        <div className="pro1" >
+        <div className="pro01" >
           <img src={returni} alt="" />
           <div>
             <h4>Easy Returns </h4>
             <p>7 Day free return</p></div>
         </div>
-        <div className="pro1">
+        <div className="pro01">
           <img src={Qicon} alt="" />
           <div>
             <h4>High Quality </h4>
             <p>Primium quality products</p></div>
         </div>
 
-        <div className="pro1" id="hide">
+        <div className="pro01" id="hide">
           <img src={security} alt="" />
           <div>
-            <h4>Security Guarantee </h4>
+            <h4>100% Secured </h4>
             <p>100% Secured shopping experience</p></div>
         </div>
       </div>
@@ -241,39 +314,82 @@ function Section() {
       {/* <!-- Treading product --> */}
       <div className="trend1">
         <h3>Trending product</h3>
-        <div className="trendImg1">
-          <img src={Tbrand} alt="" />
-          <img src={Tbrand2} alt='' />
-          <img src={Tbrand3} alt="" />
-          <img src={Tbrand4} alt="" />
+        <div className="trend01">
+          <Swiper
+            navigation={true} pagination={false}
+            autoplay={true}
+            modules={[Navigation, Pagination, Autoplay]}
+            slidesPerView={5}
+            breakpoints={{
+              // When window width is <= 768px (mobile)
+              350: {
+                slidesPerView: 3,
+                spaceBetween: 5,
+              },
+              460: {
+                slidesPerView: 3.4,
+              },
+              // When window width is <= 768px (mobile)
+              768: {
+                slidesPerView: 3.2,
+                spaceBetween: 5,
+              },
+              950:{
+                  slidesPerView: 3.5,
+                spaceBetween: 5,
+              },
+              1198: {
+                slidesPerView: 4.3,
+                spaceBetween: 4,
+              },
+              1288: {
+                slidesPerView: 5,
+                spaceBetween: 4,
+              },
+            }}
+          >
+            {
+              data && data.map((e) => {
+                return (
+                  <SwiperSlide>
+                    <div className="trendImg1">
+                      <img key={e.id} src={e.image} />
+                      <button>Shop Now</button>
+                    </div>
+                  </SwiperSlide>
+                  //   <div className='imgDiv'>
+                  // 
+                  //  </div>
+                )
+
+              })
+
+            }
+
+          </Swiper>
         </div>
       </div>
 
       <div className="bySellers">
-        <h2 id="sell">Top Collection</h2>
+        <div className="div">
+           <h2 id="sell">Top Collection</h2>
         <p>Top Treading brand collection of the sesons</p>
+        </div>
+
         <div className="sellers">
+          {
+            data && data.map((e) => {
+              return (
+                <div className='imgDiv'>
+                  <img key={e.id} src={e.image} />
+                  <h3>{e.off}% off</h3>
+                  <p>Shop Now</p>
+                </div>
+              )
 
-          <img src={shirtBrand1} alt="" />
-          <img src={manbrand2} alt="" />
-          <img src={manbrand3} alt="" />
-          <img src={manbrand4} alt="" />
-          {/* <!--  Women  --> */}
-          <img src={wbrand1} alt="" />
-          <img src={wbrand2} alt="" />
-          <img src={wbrand3} alt="" />
-          <img src={wbrand4} alt="" />
-          {/* <!-- Kids --> */}
-          <img src={kidbrand1} alt="" />
-          <img src={kidbrand2} alt="" />
-          <img src={kidbrand3} alt="" />
-          <img src={kidbrand4} alt="" />
+            })
 
-          {/* <!-- Sport --> */}
-          <img src={Sbrand1} alt="" />
-          <img src={Sbrand2} alt="" />
-          <img src={Sbrand3} alt="" />
-          <img src={Sbrand4} alt="" />
+          }
         </div>
       </div>
     </>

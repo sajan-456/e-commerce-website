@@ -1,9 +1,10 @@
-.man{
+.man {
     height: 450px;
     padding: 0px 100px;
     margin-top: 20px;
 }
-.Mbanner{
+
+.Mbanner {
     height: 400px;
     border-radius: 20px;
     display: flex;
@@ -12,81 +13,93 @@
     align-items: center;
     padding: 0px 14%;
 }
-.dialoges{
+
+.dialoges {
     height: 270px;
     width: 50%;
 }
-.dialoges h2{
+
+.dialoges h2 {
     font-size: 45px;
     font-weight: 300;
     color: rgb(12, 105, 105);
     text-align: left;
 }
-.dialoges button{
+
+.dialoges button {
     background-color: rgb(12, 7, 40);
     color: rgb(255, 251, 251);
     height: 30px;
     width: 110px;
     border-radius: 5px;
     margin: 10px 0px;
-   border: none;
-    
+    border: none;
+
 }
-.dialoges h4{
+
+.dialoges h4 {
     font-size: 30px;
     color: rgb(22, 136, 45);
     font-weight: 300;
     margin-top: 30px;
 
 }
-.dialoges p{
+
+.dialoges p {
     color: rgb(18, 18, 18);
     font-size: 15px;
 }
+
 .Mbanner img {
     width: 300px;
     height: 400px;
 }
-.promies{
+
+.promies {
     height: 90px;
     margin: 0px 200px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.pro1{
+
+.pro1 {
     height: 60px;
     display: flex;
     padding: 5px;
     /* background-color: #ffffffbb; */
 }
-.promies img{
+
+.promies img {
     height: 50px;
-    margin:0px  5px;
+    margin: 0px 5px;
     object-fit: cover;
 }
-.trend{
+
+.trend {
     /* height: 450px; */
     width: 100%;
     text-align: center;
     padding-top: 20px;
     overflow: hidden;
 }
-.trend h3{
+
+.trend h3 {
     font-size: 30px;
     color: rgb(227, 106, 20);
     margin: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+
 }
-.trendSlide{
+
+.trendSlide {
     /* height: 400px; */
     width: 400%;
     display: flex;
     animation: Tslide 10s step-start infinite;
 }
 
-.trendImg{
+.trendImg {
     /* height: 400px; */
     width: 21%;
     display: flex;
@@ -95,25 +108,36 @@
     padding: 0px 2%;
     object-fit: cover;
 }
+
 @keyframes Tslide {
-    0%,23%{
+
+    0%,
+    23% {
         transform: translateX(0);
     }
-    25%,48%{
-          transform: translateX(-25%);
+
+    25%,
+    48% {
+        transform: translateX(-25%);
     }
-    50%,72%{
+
+    50%,
+    72% {
         transform: translateX(-50%);
     }
-    75%,99.98%{
+
+    75%,
+    99.98% {
         transform: translateX(-75%);
     }
-    100%{
+
+    100% {
         transform: translateX(0);
     }
-    
+
 }
-.Timg{
+
+.Timg {
     height: 330px;
     width: 260px;
     text-align: center;
@@ -125,248 +149,354 @@
     color: white;
     padding-top: 10px;
 }
-.trendImg img{
-       height: 280px;
-       width: 240px;
-       border-radius: 10px;
+
+.trendImg img {
+    height: 280px;
+    width: 240px;
+    border-radius: 10px;
 }
-.trendImg h4{
+
+.trendImg h4 {
     font-weight: 300;
 }
-.trendImg p{
+
+.trendImg p {
     color: rgb(233, 194, 166);
 }
+
 /* Cryzy Deals */
-.deals{
+.deals {
     /* height: 430px; */
     text-align: center;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-#CHeading{
+
+#CHeading {
     font-size: 35px;
-    font-family:monospace;
-    color:rgb(58, 37, 196) ;
+    font-family: monospace;
+    color: rgb(58, 37, 196);
     text-shadow: 8px 2px 4px;
     margin: 10px;
 }
-.dealsImg{
+
+.dealsImg {
     /* height: 370px; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.cryzy{
+
+.cryzy {
     height: 300px;
     width: 15%;
-    background-color:rgb(197, 196, 196);
+    background-color: rgb(197, 196, 196);
     box-shadow: 2px 2px 2px 2px lightgray;
     cursor: pointer;
     background-color: rgb(58, 37, 196);
     padding-top: 10px;
 }
-.cryzy:hover{
+
+.cryzy:hover {
     transform: scale(1.1);
 }
-.cryzy h4{
+
+.cryzy h4 {
     color: rgb(209, 205, 205);
 }
-.cryzy h3{
+
+.cryzy h3 {
     color: rgb(213, 209, 243);
 }
-.cryzy img{
+
+.cryzy img {
     height: 250px;
     width: 92%;
 }
+
 /* ----shopByCat----- */
-.shop{
+.shop {
     /* height: 1090px; */
     text-align: center;
     margin: 20px 0px;
 }
-.shop h3{
+
+.shop h3 {
     margin: 20px;
     font-size: 35px;
     font-weight: 300;
     color: rgb(242, 63, 63);
 }
-.shopCat{
+
+.shopCat {
     /* height: 1000px; */
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
     justify-content: center;
     text-align: center;
-    padding: 0px 100px;
+    padding: 0px 10px;
 
 }
 
-.CatImg{
+.CatImg {
     height: 300px;
-    width: 16%;
+    width: 250px;
     background-color: rgb(253, 85, 51);
     padding-top: 10px;
     cursor: pointer;
 }
-.CatImg img{
-    height: 250px;
-    width: 90%;
+
+.CatImg img {
+    height: 260px;
+    width: 92%;
 }
+
+.CatImg h4 {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.CatImg p {
+    line-height: 15px;
+}
+
 @media screen and (max-width:480px) {
-    .man{
-        height: 300px;
+    .man {
+        height: 220px;
         padding: 0px;
-        margin-top: 60px;
+        margin-top: 50px;
     }
-    .Mbanner{
-        height: 300px;
+
+    .Mbanner {
+        height: 220px;
         border-radius: 0px;
         padding: 0px;
     }
-    .dialoges{
+
+    .dialoges {
+        height: 180px;
+
         width: 40%;
     }
-    .dialoges h2{
-        font-size: 35px;
+
+    .dialoges h2 {
+        line-height: 25px;
+        font-size: 25px;
     }
-    .Mbanner img{
+
+    .dialoges h4 {
+        margin-top: 30px;
+        font-size: 22px;
+    }
+
+    .dialoges p {
+        font-size: 10px;
+    }
+
+    .dialoges button {
+        width: 80px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .Mbanner img {
         width: 40%;
         height: 100%;
     }
-    .promies{
+
+    .promies {
         margin: 0px;
-        
+        height: 70px;
     }
-    .pro1{
+
+    .pro1 {
         display: block;
+        height: 50px;
     }
-    .pro1 img{
-          height: 40px;
+
+    .pro1 img {
+        height: 30px;
     }
-    .pro1 h4{
+
+    .pro1 h4 {
         font-size: 10px;
     }
-    .pro1 p{
+
+    .pro1 p {
         display: none;
     }
-    .trend{
-        padding-top: 10px;
+
+    .trend {
+        padding: 0px;
         /* height: 700px; */
 
     }
-    .trendSlide{
+
+    .trendSlide {
         align-items: center;
         /* height: 600px; */
-        
+
     }
-    .trendImg{
+
+    .trendImg {
         /* height: 570px; */
         width: 25%;
         padding: 0px;
         gap: 5px;
-        flex-wrap:wrap ;
+        flex-wrap: wrap;
         justify-content: center;
-       
+
     }
-    .Timg{
-        width: 190px;
-        height: 290px;
+
+    .Timg {
+        width: 170px;
+        height: 260px;
         box-shadow: none;
     }
-    .Timg img{
+
+    .Timg img {
         width: 90%;
         height: 80%;
     }
-    .dealsImg{
-        
-        flex-direction: column;
-        gap:10px
+
+    .dealsImg {
+        flex-wrap: wrap;
+        gap: 10px
     }
-    .cryzy{
-        width: 90%;
-        height: 380px;
+
+    .cryzy {
+        padding-top: 6px;
+        width: 45%;
+        height: 260px;
     }
-    .cryzy img{
-        height: 320px;
+
+    .cryzy img {
+        height: 220px;
         border-radius: 15px;
     }
-    .shop{
-        display: none;
+
+    .cryzy h4 {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .shop h3{
+        font-size: 25px;
+        margin: 5px;
+    }
+    
+
+    .CatImg {
+        height: 250px;
+        width: 170px;
+        background-color: rgb(253, 85, 51);
+        padding-top: 10px;
+        cursor: pointer;
+        padding-top: 5px;
+    }
+
+    .CatImg img {
+        height: 220px;
+        width: 95%;
+    }
+    .CatImg h4 {
+        line-height: 12px;
+        font-size: 15px;
+    }
+
+    .CatImg p {
+        line-height: 12px;
     }
 
 
 }
+
 @media screen and (min-width:481px) and (max-width:998px) {
- .man{
-   height: 350px;
-   padding:0px 4%;
- }
- .Mbanner{
-    height: 350px;
-    padding:0px 30px;
- }
- .Mbanner img{
-    height: 100%;
-    width: 40%;
- }
- .promies{
-    flex-wrap: wrap;
-    height: 130px;
-    margin: 0px;
- }
-    
- .promies p{
-    font-size: 18px;
- }
- #hide{
-    display: none;
- }
- .pro h4{
-    font-size: 24px;
-  }
- .pro img{
-    height: 60px;
- }
-  .trend{
+    .man {
+        height: 350px;
+        padding: 0px 4%;
+    }
+
+    .Mbanner {
+        height: 350px;
+        padding: 0px 30px;
+    }
+
+    .Mbanner img {
+        height: 100%;
+        width: 40%;
+    }
+
+    .promies {
+        flex-wrap: wrap;
+        height: 130px;
+        margin: 0px;
+    }
+
+    .promies p {
+        font-size: 18px;
+    }
+
+    #hide {
+        display: none;
+    }
+
+    .pro h4 {
+        font-size: 24px;
+    }
+
+    .pro img {
+        height: 60px;
+    }
+
+    .trend {
         padding-top: 20px;
         height: 870px;
 
     }
-    .trendSlide{
+
+    .trendSlide {
         margin-top: 10px;
         align-items: center;
         height: 790px;
     }
-    .trendImg{
+
+    .trendImg {
         height: 790px;
         width: 25%;
         padding: 0px;
         gap: 15px;
-        flex-wrap:wrap ;
+        flex-wrap: wrap;
         justify-content: center;
     }
-    .Timg{
+
+    .Timg {
         width: 300px;
         height: 390px;
         box-shadow: none;
     }
-    .Timg img{
+
+    .Timg img {
         width: 90%;
         height: 85%;
     }
-     .dealsImg{
+
+    .dealsImg {
         flex-wrap: wrap;
         justify-content: center;
-        gap:10px;
+        gap: 10px;
     }
-    .cryzy{
+
+    .cryzy {
         width: 40%;
         height: 380px;
     }
-    .cryzy img{
+
+    .cryzy img {
         height: 320px;
     }
-    .CatImg{
+
+    .CatImg {
         width: 32%;
     }
 }

@@ -1,7 +1,7 @@
 .otbanner {
-    height: 440px;
+    height: 420px;
     overflow: hidden;
-    margin: 10px;
+    margin-top: 10px;
     z-index: -1;
     /* text-align: center; */
 
@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 20px;
+    margin-bottom: 30px;
 
 }
 
@@ -135,8 +136,6 @@
 
 .brandrow {
     height: 70px;
-   
-    /* margin: 30px 5%; */
     margin: 0px 5%;
     display: flex;
     justify-content: space-evenly;
@@ -184,6 +183,7 @@
     display: flex;
     justify-content: center;
     align-items: last baseline;
+    margin-bottom: 30px;
 
 }
 
@@ -238,7 +238,6 @@
 
 .tittle {
     height: 125px;
-    width: 100%;
     text-align: right;
     text-align: center;
 
@@ -254,8 +253,9 @@
 }
 
 .tittle button:hover {
-    background-color: rgb(201, 201, 196);
-    transform: scale(1.2);
+    background-color: rgba(255, 255, 255, 0.264);
+    color: black;
+    font-weight: 600;
 }
 
 .tittle h2 {
@@ -270,64 +270,69 @@
 .byCat {
     height: 400px;
     width: 100%;
-    margin: 20px 0px;
+    ;
     text-align: center;
 }
 
-.byCat h2 {
-    font-size: 30px;
+.topCatagoryHeading {
+    margin-left: 20px;
 
 }
 
+.byCat h2 {
+
+    font-size: 30px;
+}
+
 .byCat p {
-    height: 50px;
     margin-top: 5px;
 }
 
 .catS {
-    height: 250px;
+    height: 320px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    /* padding: 0px 50px; */
+    margin: 0px 2%;
 
 }
 
 .cat1 {
+
+    height: 300px;
+    width: 260px;
+    border-radius: 10px;
     background-image: url(../assets/home/man.jpg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    z-index: -2;
+    z-index: -1;
 }
 
 .cat2 {
     background-image: url(../assets/home/womanfation.jpg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+    height: 300px;
+    width: 260px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: last baseline;
     z-index: -2;
 
 }
 
 .cat3 {
-    background-image: url(../assets/home/sareei.jpeg);
+    background-image: url(../assets/home/kidcasual.jpeg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+    height: 300px;
+    width: 260px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: last baseline;
     z-index: -2;
 
 }
@@ -335,12 +340,12 @@
 .cat4 {
     background-image: url(../assets/home/kid00.jpeg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+    height: 300px;
+    width: 260px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: last baseline;
     z-index: -2;
 
 }
@@ -348,20 +353,39 @@
 .cat5 {
     background-image: url(../assets/home/Sport2.jpeg);
     background-size: cover;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+    height: 300px;
+    width: 260px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: last baseline;
     z-index: -2;
 
 }
 
-.catS h5 {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 100;
+.catTittle {
+    background-color: #4407bffc;
+    background: linear-gradient(to right, rgb(220, 220, 26), rgb(241, 241, 239) 50%, rgb(210, 231, 15));
+    padding: 2px 0px;
+    width: 100%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    line-height: 20px;
+}
+
+.catTittle h3 {
+    color: rgb(62, 14, 14);
+}
+
+.catTittle del {
+    color: rgb(62, 14, 14);
+}
+
+.catTittle b {
+    margin-left: 5px;
+    font-size: 17px;
+    color: rgb(62, 14, 14);
 }
 
 .cat {
@@ -371,14 +395,14 @@
 }
 
 .promies1 {
-    height: 90px;
-    margin: 0px 200px;
+    height: 70px;
+    margin: 0px 5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.pro1 {
+.pro01 {
     height: 60px;
     display: flex;
     padding: 5px;
@@ -392,33 +416,53 @@
 }
 
 .trend1 {
-    height: 450px;
+    height: 430px;
     text-align: center;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .trend1 h3 {
     font-size: 30px;
 }
 
-.trendImg1 {
-    height: 400px;
+.trend01 {
+    height: 370px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-
+    padding: 0px 2%;
+    padding-top: 5px;
 }
 
 .trendImg1 img {
     height: 310px;
-    width: 270px;
+    width: 250px;
     border-radius: 20px;
-    padding: 10px;
-    background-color: darkgray;
+    padding: 5px;
+    background: linear-gradient(45deg, rgb(220, 106, 187), darkgray)
 }
 
-.trendImg1 img:hover {
+.trendImg1 button {
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    color: brown;
+    position: relative;
+    border: 2px solid rgb(243, 245, 247);
+    background-color: transparent;
+    border-radius: 5px;
+    top: -45px
+}
+
+.trendImg1 button:hover {
     transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.403);
+    color: rgb(37, 37, 37);
+}
+
+.trendImg1:hover {
+    transform: scale(.9);
+
     cursor: pointer;
 }
 
@@ -426,41 +470,49 @@
     /* height: 1500px; */
     width: 100%;
     text-align: center;
-    padding-top: 50px;
 }
 
 #sell {
-    margin: 10px;
     font-size: 35px;
-    color: brown;
+    color:  rgb(253, 85, 51);
 }
 
 .bySellers p {
-    margin-bottom: 30px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: rgb(66, 18, 18);
 }
 
 .sellers {
-    /* height: 1400px; */
-    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 0px 6%;
+    gap: 10px;
     align-items: center;
-
 
 }
 
-.sellers img {
+.imgDiv {
     height: 300px;
-    width: 19%;
-    border: 1px solid lightgray;
-    object-fit: cover;
-    box-shadow: 1px 2px 2px 3px lightgray;
-    padding: 10px;
-    background-color: blueviolet;
+    width: 250px;
+    background-color: rgb(253, 85, 51);
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.imgDiv img {
+    height: 260px;
+    width: 92%;
+}
+
+.imgDiv h3 {
+    line-height: 18px;
+    font-size: 20px;
+}
+
+.imgDiv p {
+    line-height: 15px;
 }
 
 @keyframes abc {
@@ -512,7 +564,7 @@
 @media screen and (max-width:480px) {
 
     .otbanner {
-        height: 220px;
+        height: 230px;
         display: flex;
         align-items: center;
         margin: 0px;
@@ -523,6 +575,7 @@
         height: 200px;
         border-radius: 10px;
         margin: 0px 1.4%;
+        margin-bottom: 25px;
     }
 
     .Bpart1 {
@@ -639,36 +692,30 @@
 
     }
 
-    .brandcover {
-        height: 50px;
-    }
-     
     .brandrow {
-        height: 50px;
+        height: 30px;
         margin: 0px;
+        margin-bottom: 10px;
     }
 
     .brandrow img {
-        width: 75px;
-        height: 35px;
+        width: 58px;
+        height: 28px;
 
     }
 
     #brand1 {
-        height: 30px;
-        width: 40px;
+        height: 22px;
+        width: 30px;
     }
 
     #chIcon {
         display: none;
     }
 
-    /* .subBanner {
-        height: 800px;
-        flex-direction: column;
-    } */
+
     .slideSwiper {
-        height: 220px;
+        height: 230px;
         width: 95%;
     }
 
@@ -713,42 +760,59 @@
     }
 
     .tittle h2 {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .tittle button {
-        width: 90px;
-        border: 1px solid #fff;
+        width: 85px;
+        font-size: 12px;
+        border: 0.5px solid #fff;
         background-color: transparent;
         color: #fff;
     }
 
     .byCat {
-        height: 530px;
+        height: 240px;
+        margin: 0px;
+
+    }
+
+    .topCatagoryHeading {
+        margin: 0px;
+        background-image:
+            linear-gradient(to right, white, yellow 50%, white);
+        padding-bottom: 5px;
+    }
+
+    .byCat h2 {
+        font-size: 20px;
     }
 
     .byCat p {
-        height: 20px;
+        margin: 0px;
+        height: 10px;
+        font-size: 10px;
     }
 
-    .topcat {
-        height: 50px;
-    }
-
-    .topcat h2 {
-        font-size: 40px;
-    }
 
     .catS {
-        flex-wrap: wrap;
-        height: 510px;
-        padding: 0px;
+        height: 200px;
+        margin: 0px;
+        border: 0px;
+        background: linear-gradient(rgba(243, 243, 207, 0.532), rgba(234, 239, 241, 0.664));
     }
 
     .cat1 {
-        height: 220px;
-        width: 160px;
+        height: 180px;
+        width: 110px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/man.jpg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat1 h5 {
@@ -756,84 +820,187 @@
     }
 
     .cat2 {
-        height: 220px;
-        width: 160px;
+        height: 180px;
+        width: 110px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/womanfation.jpg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat3 {
-        height: 220px;
-        width: 160px;
+        height: 180px;
+        width: 110px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/kidcasual.jpeg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat4 {
-        height: 220px;
-        width: 160px;
+        height: 180px;
+        width: 110px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/kid00.jpeg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat5 {
-        height: 220px;
-        width: 160px;
+        height: 180px;
+        width: 110px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/Sport2.jpeg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+    }
+
+    .catTittle {
+        line-height: 10px;
+    }
+
+    .catTittle h3 {
+        font-size: 10px;
+    }
+
+    .catTittle del {
+        color: black;
+        font-size: 10px;
+    }
+
+    .catTittle b {
+        font-size: 10px;
     }
 
     .promies1 {
-        margin: 0px;
+        margin: 0px 5px;
         flex-wrap: wrap;
-        height: 150px;
+        height: 70px;
     }
 
-    .promies1 p {
-        font-size: 15px;
+    .promies1 h4 {
+        font-size: 10px;
+        color: #2e2740;
+        margin-bottom: 10px;
     }
 
-    #hide {
+    .promies1 .pro01 {
+        height: 48px;
+        display: block;
+        padding: 0px;
+    }
+
+    .pro01 p {
         display: none;
     }
 
-    .trend1 {
+    .pro01 img {
+        height: 30px;
+        object-fit: cover;
+        width: 30px;
+    }
 
-        height: 600px;
+    .trend1 {
+        height: 280px;
         padding: 0px;
+        text-align: center;
+    }
+
+    .trend1 h3 {
+        font-size: 20px;
+        line-height: 35px;
+        color: #f36e3e;
+        margin: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(to right, rgb(247, 246, 246), rgb(129, 223, 232) 50%, rgb(251, 248, 248));
+    }
+
+    .trend01 {
+        height: 230px;
     }
 
     .trendImg1 {
         flex-wrap: wrap;
-        height: 550px;
+        height: 230px;
     }
 
     .trendImg1 img {
-        height: 220px;
-        width: 42%;
+        height: 210px;
+        width: 100%;
         padding: 1px;
     }
 
+    .trendImg1 button {
+        width: 90px;
+        height: 25px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
     .bySellers {
-        /* height: 1500px; */
         padding: 0px;
-        display: none;
+    }
+    .div{
+        background:linear-gradient(to right, white, rgb(105, 185, 219), white);
+    }
+    #sell {
+        font-size: 25px;
     }
 
-    .sellers {
-        /* height: 1300px; */
-        flex-wrap: wrap;
-        gap: 10px;
-        padding: 0px;
-        margin-bottom: 20px;
+    .bySellers p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .sellers{
+        gap:5px;
+    }
+    .imgDiv {
+        height: 250px;
+        width: 170px;
+        background-color: rgb(253, 85, 51);
+        padding-top: 4px;
+        cursor: pointer;
     }
 
-    .sellers img {
-        width: 45%;
-        height: 280px;
-        padding: 2px;
+    .imgDiv img {
+        height: 220px;
+        width: 95%;
+        border-radius: 5px;
+    }
+
+    .imgDiv h3 {
+        line-height: 12px;
+        font-size: 15px;
+    }
+
+    .imgDiv p {
+        line-height: 12px;
     }
 
 
 }
 
 @media screen and (min-width:481px) and (max-width:998px) {
+    .otbanner {
+        height: 375px;
+    }
+
     .banner1 {
         height: 350px;
     }
@@ -868,72 +1035,112 @@
         margin: 0px 3%;
     }
 
+    .brandrow img {
+        height: 35px;
+        width: 75px;
+    }
+
+    #brand1 {
+        height: 35px;
+    }
+
     #chIcon {
-        display: none;
+        height: 38px;
+        width: 127px;
     }
 
     .BG1 {
-        height: 300px;
-        width: 75%;
-
+        height: 220px;
+        width: 320px;
     }
 
     .BG2 {
-        height: 300px;
-        width: 75%;
+        height: 220px;
+        width: 320px;
     }
 
     .BG3 {
-        height: 300px;
-        width: 75%;
+        height: 220px;
+        width: 320px;
+    }
+
+    .BG4 {
+        height: 220px;
+        width: 320px;
+    }
+
+    .BG5 {
+        height: 220px;
+        width: 320px;
+    }
+
+    .tittle {
+        height: 75px;
+        width: 210px;
+        padding: 5px;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, 0.33);
+
+    }
+
+    .tittle h2 {
+        font-size: 20px;
+    }
+
+    .tittle button {
+        width: 85px;
+        font-size: 12px;
+        border: 0.5px solid #fff;
+        background-color: transparent;
+        color: #fff;
     }
 
     .byCat {
-        height: 870px;
+        height: 400px;
     }
 
     .catS {
-        flex-wrap: wrap;
-        height: 750px;
+        height: 350px;
+        width: 100%;
         padding: 0px;
         justify-content: center;
-        gap: 25px;
+
     }
 
     .cat1 {
-        height: 340px;
-        width: 280px;
+        height: 320px;
+        width: 220px;
         border-radius: 10px;
     }
 
     .cat2 {
-        height: 340px;
-        width: 280px;
+        height: 320px;
+        width: 220px;
         border-radius: 10px;
     }
 
     .cat3 {
-        height: 140px;
-        width: 160px;
+        height: 320px;
+        width: 220px;
         border-radius: 10px;
     }
 
     .cat4 {
-        height: 340px;
-        width: 280px;
+        height: 320px;
+        width: 220px;
         border-radius: 10px;
     }
 
     .cat5 {
-        height: 340px;
-        width: 280px;
+        height: 320px;
+        width: 220px;
         border-radius: 10px;
     }
 
     .promies1 {
         margin: 0px;
         flex-wrap: wrap;
-        height: 130px;
+        height: 110px;
     }
 
     .promies1 p {
@@ -988,9 +1195,25 @@
         margin-bottom: 20px;
     }
 
-    .sellers img {
-        width: 45%;
-        height: 380px;
-        padding: 2px;
+    .imgDiv {
+        height: 270px;
+        width: 220px;
+        padding-top: 5px;
     }
+
+    .imgDiv img {
+        width: 96%;
+        height: 88%;
+    }
+
+    .imgDiv h3 {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    .imgDiv p {
+        font-size: 14px;
+        line-height: 12px;
+    }
+
 }
