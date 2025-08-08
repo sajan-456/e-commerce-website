@@ -118,9 +118,10 @@ function ManProduct({items}){
                    <div className="iteam" key={products.id}>
                 <Link to={`/product1/${products.id}`}>  <img src={products.image} alt="img"/></Link>
                     <div className="ProductInformation">
+                    <p id="tittleHeading">Men Solid {products.color} {products.category}</p>
                     <del>{products.del}</del>
                     <i>({products.off}% off)</i>
-                    <p>Rs.{products.price}</p>
+                    <p> &#8377; {products.price}</p>
                     <p id="error">{products.error}</p>
                     </div>
                    

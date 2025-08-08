@@ -26,6 +26,12 @@
     z-index: -1;
 }
 
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+   
+}
+
 .Bpart1 {
     height: 340px;
     width: 35%;
@@ -473,24 +479,28 @@
 }
 
 #sell {
-    font-size: 35px;
-    color:  rgb(253, 85, 51);
+    font-size: 30px;
+    color: rgb(90, 30, 18);
 }
 
 .bySellers p {
-    font-weight: 900;
+    font-weight: 200;
     margin-bottom: 10px;
     color: rgb(66, 18, 18);
 }
 
 .sellers {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 10px; */
     align-items: center;
 
+}
+
+.mainSell {
+    margin-bottom: 10px;
 }
 
 .imgDiv {
@@ -917,8 +927,9 @@
     }
 
     .trend1 {
-        height: 280px;
+        height: 265px;
         padding: 0px;
+        margin: auto;
         text-align: center;
     }
 
@@ -937,42 +948,72 @@
 
     .trendImg1 {
         flex-wrap: wrap;
-        height: 230px;
+        height: 225px;
     }
 
     .trendImg1 img {
-        height: 210px;
+        height: 200px;
         width: 100%;
         padding: 1px;
     }
 
     .trendImg1 button {
-        width: 90px;
         height: 25px;
-        font-size: 12px;
-        font-weight: 500;
+        width: 80px;
+        background-color: rgba(0, 0, 0, 0.248);
+        color: white;
+        border: 1px solid;
+        font-weight: 400;
+        font-size: 10px;
+    }
+
+    #TButton {
+        top: -35px
+    }
+
+    /* .swiper-pagination-bullet {
+        width: 12px;
+        height: 5px;
+        border-radius: 5px;
+    } */
+
+    .trendImg1 button:hover {
+        transform: none;
+        background-color: transparent;
+        color: white;
+    }
+
+    .trendImg1:hover {
+        transform: none;
+
+        cursor: pointer;
     }
 
     .bySellers {
         padding: 0px;
     }
-    .div{
-        background:linear-gradient(to right, white, rgb(105, 185, 219), white);
+
+    .div {
+        background: linear-gradient(to right, rgb(243, 247, 247), rgb(114, 231, 122), rgb(246, 247, 247));
     }
+
     #sell {
         font-size: 25px;
+        color: rgb(65, 16, 16);
     }
 
     .bySellers p {
         font-size: 12px;
         line-height: 15px;
     }
-    .sellers{
-        gap:5px;
+
+    .sellers {
+        gap: 5px;
     }
+
     .imgDiv {
         height: 250px;
-        width: 170px;
+        width: 175px;
         background-color: rgb(253, 85, 51);
         padding-top: 4px;
         cursor: pointer;
@@ -981,12 +1022,13 @@
     .imgDiv img {
         height: 220px;
         width: 95%;
-        border-radius: 5px;
+        border-radius: 8px;
     }
 
     .imgDiv h3 {
         line-height: 12px;
         font-size: 15px;
+        color: rgb(67, 15, 15);
     }
 
     .imgDiv p {
@@ -1003,6 +1045,8 @@
 
     .banner1 {
         height: 350px;
+        width: 96%;
+        margin: 0px 1.4%;
     }
 
     .banner1 img {
@@ -1036,17 +1080,18 @@
     }
 
     .brandrow img {
-        height: 35px;
-        width: 75px;
+        height: 45px;
+        width: 125px;
     }
 
     #brand1 {
-        height: 35px;
+        height: 45px;
+        width: 70px;
     }
 
     #chIcon {
-        height: 38px;
-        width: 127px;
+        height: 46px;
+        width: 155px;
     }
 
     .BG1 {
@@ -1096,13 +1141,27 @@
     }
 
     .byCat {
-        height: 400px;
+        height: 420px;
+    }
+
+    .byCat h2 {
+        font-size: 35px;
+        line-height: 30px;
+        color: rgb(98, 22, 22);
+    }
+
+    .topCatagoryHeading {
+        margin: 0px;
+        background-image:
+            linear-gradient(to right, white, yellow 50%, white);
+        padding-bottom: 5px;
     }
 
     .catS {
         height: 350px;
-        width: 100%;
         padding: 0px;
+        overflow: hidden;
+        align-items: center;
         justify-content: center;
 
     }
@@ -1110,37 +1169,73 @@
     .cat1 {
         height: 320px;
         width: 220px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/man.jpg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat2 {
         height: 320px;
         width: 220px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/womanfation.jpg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat3 {
         height: 320px;
         width: 220px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/kid00.jpeg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat4 {
         height: 320px;
         width: 220px;
+        border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/kidcasual.jpeg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
     }
 
     .cat5 {
         height: 320px;
         width: 220px;
+         border: 3px solid transparent;
         border-radius: 10px;
+        background-image:
+            url(../assets/home/Sport2.jpeg),
+            linear-gradient(45deg, red, yellow);
+        background-size: cover;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        object-fit: cover;
     }
 
     .promies1 {
         margin: 0px;
         flex-wrap: wrap;
-        height: 110px;
+        height: 80px;
     }
 
     .promies1 p {
@@ -1151,40 +1246,104 @@
         display: none;
     }
 
-    .pro1 h4 {
-        font-size: 24px;
+    .pro01 {
+        height: 70px;
+
     }
 
-    .pro1 img {
-        height: 60px;
+    .pro01 h4 {
+        font-size: 20px;
+        line-height: 45px;
+        font-weight: 600;
     }
+
+    .pro01 img {
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+
+    .pro01 p {
+        display: none;
+    }
+
 
     .trend1 {
-        height: 900px;
+        height: 330px;
+        padding: 0px;
+        text-align: center;
     }
 
     .trend1 h3 {
-        color: #f55314;
-        font-size: 40px;
-        margin: 10px;
+        font-size: 30px;
+        line-height: 45px;
+        color: #f36e3e;
+        margin: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: linear-gradient(to right, rgb(247, 246, 246), rgb(129, 223, 232) 50%, rgb(251, 248, 248));
+    }
+
+    .trend01 {
+        height: 280px;
     }
 
     .trendImg1 {
-        height: 850px;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
+        height: 275px;
     }
 
     .trendImg1 img {
-        height: 42%;
-        width: 40%;
+        height: 270px;
+        width: 100%;
+        padding: 1px;
+    }
+
+    .trendImg1 button {
+        height: 30px;
+        width: 110px;
+        background-color: rgba(0, 0, 0, 0.248);
+        color: white;
+        border: 1px solid;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    #TButton {
+        top: -40px
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 4px;
+        border-radius: 5px;
+    }
+
+    .trendImg1 button:hover {
+        transform: none;
+        background-color: transparent;
+        color: white;
+    }
+
+    .trendImg1:hover {
+        transform: none;
+
+        cursor: pointer;
     }
 
     .bySellers {
-        /* height: 1500px; */
+        margin-top: 15px;
         padding: 0px;
+    }
+     .div {
+        background: linear-gradient(to right, rgb(243, 247, 247), rgb(114, 231, 122), rgb(246, 247, 247));
+    }
+    #sell {
+        font-size: 35px;
+        color: #f36e3e;
+    }
 
+    .bySellers p {
+        font-size: 20px;
     }
 
     .sellers {
@@ -1193,27 +1352,28 @@
         gap: 10px;
         padding: 0px;
         margin-bottom: 20px;
+        margin-top: 15px;
     }
 
     .imgDiv {
-        height: 270px;
+        height: 290px;
         width: 220px;
         padding-top: 5px;
     }
 
     .imgDiv img {
         width: 96%;
-        height: 88%;
+        height: 87%;
     }
 
     .imgDiv h3 {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 15px;
     }
 
     .imgDiv p {
-        font-size: 14px;
-        line-height: 12px;
+        font-size: 17px;
+        line-height: 15px;
     }
 
 }

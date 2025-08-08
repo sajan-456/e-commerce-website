@@ -146,24 +146,43 @@ i{
         font-size: 30px;
       }
       .myProduct{
-        gap:0px;
+        gap:5px;
         margin-top: 10px;
         margin-bottom:10px ;
       }
       .iteam{
-        width: 49.6%;
+        width: 46%;
+        height: 330px;
         box-shadow:none;
-        border: 0.5px solid rgb(114, 113, 113);
-        border-right: none;
-        border-top: none;
-        border-radius: 0px;
+        border: 0.5px solid lightgray;
+        border-radius: 5px;
         padding: 0px;
         box-shadow: none;
         margin: 0px;
+        text-align: start;
       }
       .iteam img{
         width: 100%;
         border-radius: 0px;
+        height: 270px;
+      }
+      .ProductInformation{
+        margin-left: 5px;
+      }
+      #tittleHeading{
+        font-size: 12px;
+        font-size: 100;
+        color:rgb(58, 58, 58);
+      }
+      .iteam del{
+        font-size: 13px;
+      }
+      .iteam i{
+        font-size: 15px;
+        color: green;
+      }
+      .iteam p{
+        font-size: 13px;
       }
 }
 @media screen and (min-width:481px) and (max-width:998px) {

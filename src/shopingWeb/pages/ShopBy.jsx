@@ -10,6 +10,7 @@ import trend9 from './assets/Lower for men.jpeg'
 import trend10 from './assets/Men Sneakers.jpeg'
 import trend11 from './assets/Slippers White Sandals.jpeg'
 import trend12 from './assets/greyJacket.jpeg'
+import trend13 from './assets/pants.jpg'
 
 export const datas = [
     {
@@ -101,6 +102,12 @@ export const datas = [
         image: trend6,
         off: '30 - 40',
         price: 1700,
+    },
+     {
+        id: 16,
+        image: trend13,
+        off: '50 - 70',
+        price: 1200,
     },
 
 ]

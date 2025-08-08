@@ -8,26 +8,6 @@ import delivery from '../assets/home/delivery_icons.png'
 import returni from '../assets/home/return-removebg.png'
 import Qicon from '../assets/home/quality_icons.png'
 import security from '../assets/home/Security_icons.png'
-import shirtBrand1 from '../assets/bestSeller/edgeshirt.jpeg'
-import manbrand2 from '../assets/bestSeller/stingShirt.jpeg'
-import manbrand3 from '../assets/bestSeller/boldpant.jpeg'
-import manbrand4 from '../assets/bestSeller/longshirt.jpeg'
-import wbrand1 from '../assets/bestSeller/wlehengBrand.jpeg'
-import wbrand2 from '../assets/bestSeller/wbestsellerBrand.jpeg'
-import wbrand3 from '../assets/bestSeller/womanBrand.jpeg'
-import wbrand4 from '../assets/bestSeller/womanKbrand.jpeg'
-import kidbrand1 from '../assets/bestSeller/kid Brannd.jpeg'
-import kidbrand2 from '../assets/bestSeller/kidsbrand.jpeg'
-import kidbrand3 from '../assets/bestSeller/kidsbrand2.jpeg'
-import kidbrand4 from '../assets/bestSeller/kidsbrandName.jpeg'
-import Sbrand1 from '../assets/bestSeller/SBrend2.jpeg'
-import Sbrand2 from '../assets/bestSeller/SBrand1.jpeg'
-import Sbrand3 from '../assets/bestSeller/Sbrand3.jpeg'
-import Sbrand4 from '../assets/bestSeller/sportBrand.jpeg'
-import Tbrand from '../assets/home/greyJacket.jpeg'
-import Tbrand2 from '../assets/home/Men Sneakers.jpeg'
-import Tbrand3 from '../assets/home/Textured Button Down Shirts Casual Jacket.jpeg'
-import Tbrand4 from '../assets/home/lower1.jpeg'
 import homebanner from '../assets/home/homeBanner.png'
 import homebanner2 from '../assets/home/homeBanner3.png'
 import homebanner3 from '../assets/home/homeBanner4.png'
@@ -47,7 +27,12 @@ function Section() {
   useEffect((e) => {
     setData(datas)
   }, [])
-  console.log(data)
+
+
+  const newData = datas.filter((e, i) => (i % 2 === 0))
+  const newData2 = datas.filter((e, i) => (i % 2 === 1))
+
+
   return (
     <>
 
@@ -126,12 +111,12 @@ function Section() {
       <div className="slideSwiper">
         <Swiper className='mainSwiper'
           navigation={true} pagination={true}
-          autoplay={true} spaceBetween={0}
+          autoplay={false} spaceBetween={0}
           modules={[Navigation, Pagination, Autoplay]}
           slidesPerView={3}
           breakpoints={{
             // When window width is <= 768px (mobile)
-            350: {
+            330: {
               slidesPerView: 2,
               spaceBetween: 0,
             },
@@ -139,6 +124,7 @@ function Section() {
             768: {
               slidesPerView: 3,
               spaceBetween: 5,
+              autoplay: true,
             },
           }}>
           <SwiperSlide className='swiperslide'>
@@ -198,13 +184,17 @@ function Section() {
         <div className="catS">
           <Swiper
             navigation={true} pagination={false}
-            autoplay={true}
+            autoplay={false}
             modules={[Navigation, Pagination, Autoplay]}
             slidesPerView={5}
             breakpoints={{
               // When window width is <= 768px (mobile)
-              350: {
-                slidesPerView: 3.2,
+              330: {
+                slidesPerView: 3,
+                spaceBetween: 0,
+              },
+               400: {
+                slidesPerView: 3.3,
                 spaceBetween: 0,
               },
               460: {
@@ -215,12 +205,16 @@ function Section() {
                 slidesPerView: 3.2,
                 spaceBetween: 5,
               },
+               800: {
+                slidesPerView: 3.4,
+                spaceBetween: 5,
+              },
               1068: {
-                slidesPerView: 3.6,
+                slidesPerView: 4.2,
                 spaceBetween: 4,
               },
               1188: {
-                slidesPerView: 4.3,
+                slidesPerView: 5,
                 spaceBetween: 4,
               },
             }}
@@ -322,29 +316,34 @@ function Section() {
             slidesPerView={5}
             breakpoints={{
               // When window width is <= 768px (mobile)
-              350: {
-                slidesPerView: 3,
+              330: {
+                slidesPerView: 2.6,
                 spaceBetween: 5,
               },
               460: {
-                slidesPerView: 3.4,
+                slidesPerView: 3.2,
               },
               // When window width is <= 768px (mobile)
               768: {
-                slidesPerView: 3.2,
+                slidesPerView: 3.4,
                 spaceBetween: 5,
+                
               },
-              950:{
-                  slidesPerView: 3.5,
+              990: {
+                slidesPerView: 4,
                 spaceBetween: 5,
+
               },
               1198: {
-                slidesPerView: 4.3,
+                slidesPerView: 4.4,
                 spaceBetween: 4,
               },
-              1288: {
+              1298: {
                 slidesPerView: 5,
                 spaceBetween: 4,
+                autoplay: true,
+                
+                
               },
             }}
           >
@@ -352,10 +351,11 @@ function Section() {
               data && data.map((e) => {
                 return (
                   <SwiperSlide>
+                    <Link to={'/manProduct'}>
                     <div className="trendImg1">
                       <img key={e.id} src={e.image} />
-                      <button>Shop Now</button>
-                    </div>
+                      <button id='TButton'>Shop Now</button>
+                    </div></Link>
                   </SwiperSlide>
                   //   <div className='imgDiv'>
                   // 
@@ -372,24 +372,113 @@ function Section() {
 
       <div className="bySellers">
         <div className="div">
-           <h2 id="sell">Top Collection</h2>
-        <p>Top Treading brand collection of the sesons</p>
+          <h2 id="sell">Top Collection</h2>
+          <p>Top Treading brand collection of the sesons</p>
         </div>
 
         <div className="sellers">
-          {
-            data && data.map((e) => {
-              return (
-                <div className='imgDiv'>
-                  <img key={e.id} src={e.image} />
-                  <h3>{e.off}% off</h3>
-                  <p>Shop Now</p>
-                </div>
-              )
+          <Swiper className='mainSell'
+            navigation={true} pagination={false}
+            autoplay={true}
+            modules={[Navigation, Pagination, Autoplay]}
+            slidesPerView={5}
+            breakpoints={{
+              330: {
+                slidesPerView: 2,
+                spaceBetween: 1,
+              },
+              430: {
+                slidesPerView: 3.3,
+              },
+              500: {
+                slidesPerView: 3.6,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 5,
+              },
+              950: {
+                slidesPerView: 4.2,
+                spaceBetween: 5,
+              },
+              1180: {
+                slidesPerView: 5,
+                spaceBetween: 4,
+              },
+              1288: {
+                slidesPerView: 6,
+                spaceBetween: 4,
+              },
+            }}>
+            {
+              newData && newData.map((e) => {
+                return (
 
-            })
+                  <SwiperSlide>
+                    <Link to={'/manProduct'}>
+                    <div className='imgDiv'>
+                      <img key={e.id} src={e.image} />
+                      <h3>{e.off}% off</h3>
+                      <p>Shop Now</p>
+                    </div></Link>
+                  </SwiperSlide>
+                )
 
-          }
+              })
+
+            }
+          </Swiper>
+          <Swiper
+            navigation={true} pagination={false}
+            autoplay={true}
+            modules={[Navigation, Pagination, Autoplay]}
+            slidesPerView={5}
+            breakpoints={{
+              330: {
+                slidesPerView: 2,
+                spaceBetween: 1,
+              },
+              430: {
+                slidesPerView: 3,
+              },
+              500: {
+                slidesPerView: 3.6,
+              },
+              768: {
+                slidesPerView: 4,
+                spaceBetween: 5,
+              },
+              950: {
+                slidesPerView: 4.2,
+                spaceBetween: 5,
+              },
+              1180: {
+                slidesPerView: 5,
+                spaceBetween: 4,
+              },
+              1288: {
+                slidesPerView: 6,
+                spaceBetween: 4,
+              },
+            }}>
+            {
+              newData2 && newData2.map((e) => {
+                return (
+
+                  <SwiperSlide>
+                    <Link to={'/manProduct'}>
+                    <div className='imgDiv'>
+                      <img key={e.id} src={e.image} />
+                      <h3>{e.off}% off</h3>
+                      <p>Shop Now</p>
+                    </div></Link>
+                  </SwiperSlide>
+                )
+
+              })
+
+            }
+          </Swiper>
         </div>
       </div>
     </>

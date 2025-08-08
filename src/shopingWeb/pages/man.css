@@ -265,7 +265,7 @@
     .man {
         height: 220px;
         padding: 0px;
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
     .Mbanner {
@@ -283,11 +283,12 @@
     .dialoges h2 {
         line-height: 25px;
         font-size: 25px;
+        font-family: serif;
     }
 
     .dialoges h4 {
         margin-top: 30px;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .dialoges p {
@@ -301,7 +302,7 @@
     }
 
     .Mbanner img {
-        width: 40%;
+        width: 34%;
         height: 100%;
     }
 
@@ -317,6 +318,7 @@
 
     .pro1 img {
         height: 30px;
+        width: 30px;
     }
 
     .pro1 h4 {
@@ -332,7 +334,10 @@
         /* height: 700px; */
 
     }
-
+    .trend h3{
+        font-size: 22px;
+        background:linear-gradient(to right, white, skyblue, white)
+    }
     .trendSlide {
         align-items: center;
         /* height: 600px; */
@@ -353,24 +358,31 @@
         width: 170px;
         height: 260px;
         box-shadow: none;
+        padding-top: 5px;
     }
 
     .Timg img {
-        width: 90%;
+        width: 95%;
         height: 80%;
     }
 
     .dealsImg {
         flex-wrap: wrap;
-        gap: 10px
+        gap: 5px;
+        
     }
 
     .cryzy {
         padding-top: 6px;
-        width: 45%;
+        width: 47%;
         height: 260px;
+        margin-bottom: 10px;
     }
-
+    #CHeading{
+        font-size: 25px;
+        text-shadow: none;
+        background:linear-gradient(to right, rgb(245, 246, 246), rgb(202, 222, 74), white)
+    }
     .cryzy img {
         height: 220px;
         border-radius: 15px;
@@ -380,9 +392,17 @@
         font-size: 15px;
         line-height: 15px;
     }
+    .shopCat{
+        gap:5px;
+        padding: 0px;
+    }
     .shop h3{
         font-size: 25px;
         margin: 5px;
+        background-color: green;
+        color: aliceblue;
+        line-height: 40px;
+        border-radius: 10px;
     }
     
 
@@ -401,11 +421,13 @@
     }
     .CatImg h4 {
         line-height: 12px;
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .CatImg p {
         line-height: 12px;
+        font-size: 12px;
+
     }
 
 

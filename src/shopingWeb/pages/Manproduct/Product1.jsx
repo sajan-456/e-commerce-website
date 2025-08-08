@@ -29,7 +29,14 @@ function Product1 ({cart, setCart}){
     },[id,product.price])
         
     
+     function shoeMasseg(){
 
+        return alert("Order Successfull")
+     }
+      function addToCart(){
+
+        return alert("Add Successfull")
+     }
    
     return(
         <>
@@ -54,8 +61,8 @@ function Product1 ({cart, setCart}){
                 </div>
 
                 <div className="button">
-                   <button id="add" onClick={()=>addTocart(product.id, product.price, product.about, product.image)}>ADD To CART</button>
-                <button>BUY NOW</button>
+                   <button id="add" onClick={addToCart}>ADD TO CART</button>
+                <button onClick={shoeMasseg}>BUY NOW</button>
                 </div>
                
             </div>
@@ -71,6 +78,7 @@ function Product1 ({cart, setCart}){
                    <div className="iteam" >
                    <Link to={`/product1/${product.id}`}>
                   <img src={product.image} alt="img"/></Link>
+                   <p id="tittleHeading">Men Solid {product.color} {product.category}</p>
                     <del>{product.del}</del>
                     <i>({product.off}% off)</i>
                     <p>Rs.{product.price}</p>

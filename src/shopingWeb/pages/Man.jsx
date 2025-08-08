@@ -193,6 +193,7 @@ function Man (){
     <div className="deals">
       <h3 id="CHeading">Cryzy Deals</h3>
       <div className="dealsImg">
+        
         <div className="cryzy">
           <img src={cryzy1} alt="" />
           <h4>Save Up to $100</h4>

@@ -101,23 +101,39 @@ h2{
         margin: 5px;
     }
     .about h2{
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
+        font-weight: 300;
     }
     .about p{
         display: inline; 
+        color: rgb(116, 115, 115);
     }
     .about h3{
         margin-top: 10px;
+        font-weight: 300;
+    }
+    .about i{
+        color: green;
+    }
+    #price{
+        font-size: 15px;
     }
     #Releted{
         margin: 10px;
+        font-size: 25px;
+        font-weight: 300;
+        background-color: green;
+        color: aliceblue;
+        border-radius: 10px;
     }
     .reletedProduct{
         padding: 0px;
         margin: 0px;
-        gap: 0px;
+        gap: 4px;
+        
     }
+  
     .button{
         background-color: white;
         height: 50px;
