@@ -25,21 +25,13 @@ function Header(){
         settChecked(e.target.checked);
     };
 //  click tab
-      const divElement = useRef();
-    
-      useEffect(()=>{
-         if (divElement.current) {
-      divElement.current.style.backgroundColor = "none";
+     const[color, setColor]= useState();
         
-    }
-       
-     },[1])
      function changeColor(){
-     if (divElement.current) {
-      divElement.current.style.backgroundColor = "#FF000077";
-       divElement.current.style.borderRadius=  '5px'  
-    }
+        setColor('green')
      }
+    
+ 
     
     return(
         <>
@@ -63,7 +55,7 @@ function Header(){
             <p>Explore more by Categories</p>
             </div>
             
-            <Link to={'/man'} className='nav'ref={divElement} onClick={changeColor} >
+            <Link to={'/man'} className='nav' style={{backgroundColor:color}} onClick={changeColor} >
             Man</Link> 
             <Link to={"/women"}className='nav' >Women</Link> 
             <Link to={"/kids"}className='nav' >Kids</Link>

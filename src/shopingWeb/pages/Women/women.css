@@ -2,9 +2,67 @@
    padding: 0;
    margin: 0;
 }
-.main{
-    height: 600px;
+.womanBanner{
+    height: 320px;
     display: flex;
-    justify-content: center;
+    background-color:burlywood;
     align-items: center;
+    justify-content: center;
+    margin: 0px 5%;
+    margin-top: 10px;
+    
+}
+#img1{
+    width: 22%;
+    height: 100%;
+
+}
+#img2{
+    width: 23%;
+    height: 110%;
+}
+.heading{
+    height: 200px;
+    margin: 0px 100px;
+    text-align: center;
+}
+.heading h1{
+    font-size: 40px;
+    font-weight: 500;
+    color:rgb(73, 19, 70);
+    margin: 10px;
+}
+.heading p{
+    color: rgb(84, 84, 84);
+}
+.heading button{
+    height: 30px;
+    width: 110px;
+    background-color: rgb(221, 209, 161);
+    border: 1px solid rgb(226, 175, 138);
+    border-radius: 5px;
+    margin-top: 50px;
+    color:coral;
+}
+.dealsW{
+    height: 400px;
+   
+    padding: 10px;
+}
+.deals h2{
+    font-weight: 400;
+    text-align: left;
+    font-size: 22px;
+}
+.dealsSection{
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.dealsSection img{
+    height: 180px;
+    width: 150px;
 }

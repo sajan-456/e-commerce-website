@@ -15,7 +15,7 @@ button{
     cursor: pointer;
 }
 header{
-    height: 70px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -142,7 +142,7 @@ a{
 .hShop{
     display: none;
 }
-@media  screen and (max-width:450px) {
+@media  screen and (max-width:480px) {
 header{ 
     height: 55px;
     flex-wrap: wrap;
@@ -257,7 +257,10 @@ header img{
     font-size: 30px;
 }
 }
-@media screen and (min-width:455px) and (max-width:768px) {
+@media screen and (min-width:481px) and (max-width:768px) {
+    header{
+        height: 60px;
+    }
    #search{
     width: 80%;
    }

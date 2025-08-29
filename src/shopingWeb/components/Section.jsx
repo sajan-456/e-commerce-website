@@ -199,10 +199,15 @@ function Section() {
               },
               460: {
                 slidesPerView: 3.4,
+                spaceBetween:5,
+              },
+              481:{
+                slidesPerView:2,
+                spaceBetween:5,
               },
               // When window width is <= 768px (mobile)
               768: {
-                slidesPerView: 3.2,
+                slidesPerView: 3,
                 spaceBetween: 5,
               },
                800: {
@@ -341,7 +346,7 @@ function Section() {
               1298: {
                 slidesPerView: 5,
                 spaceBetween: 4,
-                autoplay: true,
+                
                 
                 
               },
@@ -394,8 +399,8 @@ function Section() {
                 slidesPerView: 3.6,
               },
               768: {
-                slidesPerView: 4,
-                spaceBetween: 5,
+                slidesPerView: 3.8,
+                spaceBetween: 2,
               },
               950: {
                 slidesPerView: 4.2,
@@ -445,7 +450,7 @@ function Section() {
                 slidesPerView: 3.6,
               },
               768: {
-                slidesPerView: 4,
+                slidesPerView: 3.8,
                 spaceBetween: 5,
               },
               950: {

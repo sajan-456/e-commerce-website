@@ -81,7 +81,7 @@ function Product1 ({cart, setCart}){
                    <p id="tittleHeading">Men Solid {product.color} {product.category}</p>
                     <del>{product.del}</del>
                     <i>({product.off}% off)</i>
-                    <p>Rs.{product.price}</p>
+                    <p id="price1">&#8377;{product.price}</p>
                 </div>     
                  </>
              )

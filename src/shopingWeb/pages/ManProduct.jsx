@@ -121,7 +121,7 @@ function ManProduct({items}){
                     <p id="tittleHeading">Men Solid {products.color} {products.category}</p>
                     <del>{products.del}</del>
                     <i>({products.off}% off)</i>
-                    <p> &#8377; {products.price}</p>
+                    <p id="price1"> &#8377; {products.price}</p>
                     <p id="error">{products.error}</p>
                     </div>
                    

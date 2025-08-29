@@ -11,7 +11,7 @@ import Kids from "./shopingWeb/pages/Kids/Kids"
 import Profile from "./shopingWeb/pages/Profile/Profile"
 import Login from "./shopingWeb/pages/profile/Login"
 import Search from "./shopingWeb/components/Search"
-// import Registration from "./components/Registration"
+//import Registration from "./components/Registration"
 // import Layout from "./pages/Layout"
 // import Home from './pages/Home'
 // import About from './pages/About'
@@ -42,22 +42,26 @@ function App() {
         <Route element={<Profile/>} path="/profile"/>
         <Route element={<Login/>} path="/login"/>
         
-            
-      {/* <Route element={<Layout/>}path="/">
-       <Route element={<Home/>} path="" index/>
-       <Route element={<About/>} path="about"/>
-       <Route element={<Contact/>} path="contact"/>
-       <Route element={ <Registration/>} path="/reg"/>
-      </Route> */}
-      
 
     </Routes>
    <Footer/>
    
-    </HashRouter>
+     </HashRouter>
      
-    </>
-  )
+     </>)
+ {/* <>
+  <HashRouter>
+    <Routes>
+       <Route element={<Layout/>}path="/">
+       <Route element={<Home/>} path="" index/>
+       <Route element={<About/>} path="about"/>
+       <Route element={<Contact/>} path="contact"/>
+       <Route element={ <Registration/>} path="/reg"/>
+      </Route>
+    </Routes>
+  </HashRouter> 
+  </>*/}
+  
 }
 
 export default App
