@@ -26,6 +26,7 @@ header{
     z-index: 2;
 
 }
+
 .logo{
     margin-left: 10px;
 }
@@ -65,6 +66,7 @@ header img{
     /* color: rgb(30, 86, 146); */
     background-color: #11111117;
     border-radius: 5px;
+    transform: translateY(2px);
 }
 .newNav{
     display: none;
@@ -149,7 +151,9 @@ header{
     margin-bottom: 55px;
     justify-content: space-around;
 
-
+}
+header.no-margin{
+    margin-bottom: 5px;
 }
 .logo{
     width: 30%;

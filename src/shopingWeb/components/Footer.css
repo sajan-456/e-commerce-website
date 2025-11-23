@@ -45,4 +45,8 @@ ul{
         font-size: 14px;
         color: rgb(53, 53, 53);
     }
+    li{
+        color: rgba(0, 0, 0, 0.516);
+    }
+    
 }

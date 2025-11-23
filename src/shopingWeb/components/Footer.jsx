@@ -2,6 +2,7 @@ import React from "react";
 import googlei from '../assets/home/Google Play.svg'
 import applei  from '../assets/home/Play Store.svg'
 import './Footer.css'
+import {Link} from 'react-router-dom'
 
 function Footer(){
     return(
@@ -10,9 +11,9 @@ function Footer(){
         <div className="f1">
             <h4>Online Fashion</h4>
             <ul>
-                <li>Men</li>
-                <li>Women</li>
-                <li>Kids</li>
+               <Link to={'/man'}> <li>Men</li></Link>
+                <Link to={'/women'}><li>Women</li></Link>
+               <Link to={'/kids'}><li>Kids</li></Link> 
                 <li>Sports</li>
             </ul>
         </div>

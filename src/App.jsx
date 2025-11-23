@@ -11,6 +11,7 @@ import Kids from "./shopingWeb/pages/Kids/Kids"
 import Profile from "./shopingWeb/pages/Profile/Profile"
 import Login from "./shopingWeb/pages/profile/Login"
 import Search from "./shopingWeb/components/Search"
+import Cart from "./shopingWeb/components/Cart"
 //import Registration from "./components/Registration"
 // import Layout from "./pages/Layout"
 // import Home from './pages/Home'
@@ -41,6 +42,7 @@ function App() {
         <Route element={<Product1/>} cart={cart} setCart={setCart} path="/product1/:id" />
         <Route element={<Profile/>} path="/profile"/>
         <Route element={<Login/>} path="/login"/>
+        <Route element={<Cart/>} path="/cart"/>
         
 
     </Routes>

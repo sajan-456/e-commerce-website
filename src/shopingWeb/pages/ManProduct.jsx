@@ -111,11 +111,11 @@ function ManProduct({items}){
         <div className="myProduct">
                 
          {
-         newData &&  newData.map((products)=>{
+         newData &&  newData.map((products,i)=>{
             
              return(
                  <>
-                   <div className="iteam" key={products.id}>
+                   <div key={products.id || i} className="iteam" >
                 <Link to={`/product1/${products.id}`}>  <img src={products.image} alt="img"/></Link>
                     <div className="ProductInformation">
                     <p id="tittleHeading">Men Solid {products.color} {products.category}</p>

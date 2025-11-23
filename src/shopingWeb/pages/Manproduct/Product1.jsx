@@ -4,6 +4,9 @@ import {Link, useParams} from 'react-router-dom'
 import ManProduct from "../ManProduct"
 import './pro.css'
 import { items } from "../Data"
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../store/cartSlice";
+
 
 function Product1 ({cart, setCart}){
     const addTocart = (id,price,about,image)=>{
@@ -33,10 +36,12 @@ function Product1 ({cart, setCart}){
 
         return alert("Order Successfull")
      }
-      function addToCart(){
+    //   function addToCart(){
 
-        return alert("Add Successfull")
-     }
+    //     return alert("Add Successfull")
+    //  }
+     const dispatch = useDispatch();
+
    
     return(
         <>
@@ -61,7 +66,7 @@ function Product1 ({cart, setCart}){
                 </div>
 
                 <div className="button">
-                   <button id="add" onClick={addToCart}>ADD TO CART</button>
+                   <button id="add" onClick={()=>dispatch(addToCart(product))}>ADD TO CART</button>
                 <button onClick={shoeMasseg}>BUY NOW</button>
                 </div>
                
@@ -75,7 +80,7 @@ function Product1 ({cart, setCart}){
           Array.isArray(releted)&&releted.map((product)=>{
              return(
                  <>
-                   <div className="iteam" >
+                   <div key={product.id} className="iteam" >
                    <Link to={`/product1/${product.id}`}>
                   <img src={product.image} alt="img"/></Link>
                    <p id="tittleHeading">Men Solid {product.color} {product.category}</p>
