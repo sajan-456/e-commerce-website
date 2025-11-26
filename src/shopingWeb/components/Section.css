@@ -181,7 +181,7 @@
 
 .BG1 {
     height: 230px;
-    width: 90%;
+    width: 400px;
     padding: 5px;
     border-radius: 20px;
     background-image: url(../assets/home/2025-06-23.jpg);
@@ -195,7 +195,7 @@
 
 .BG2 {
     height: 230px;
-    width: 90%;
+    width:400px;
     padding: 5px;
     border-radius: 20px;
     background-image: url(../assets/home/Sscreen3.jpeg);
@@ -208,7 +208,7 @@
 
 .BG3 {
     height: 230px;
-    width: 90%;
+    width: 400px;;
     padding: 5px;
     border-radius: 20px;
     background-image: url(../assets/home/2025-06-230.jpg);
@@ -220,7 +220,7 @@
 
 .BG4 {
     height: 230px;
-    width: 90%;
+    width:400px;
     padding: 5px;
     border-radius: 20px;
     background-image: url(../assets/home/BG4.jpg);
@@ -232,7 +232,7 @@
 
 .BG5 {
     height: 230px;
-    width: 90%;
+    width: 400px;;
     padding: 5px;
     border-radius: 20px;
     background-image: url(../assets/home/BG5.jpg);
@@ -968,6 +968,7 @@
     }
 
     .trendImg1 button {
+        display: none;
         height: 25px;
         width: 80px;
         background-color: rgba(0, 0, 0, 0.248);

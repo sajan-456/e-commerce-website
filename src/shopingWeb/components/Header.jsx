@@ -38,7 +38,7 @@ function Header() {
     const cartItems = useSelector((state) => state.cart.cartItems);
     const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
-    const hideSearchOn = ["/manproduct", "/women", "/kids", "/profile","/cart","/product1"];
+    const hideSearchOn = ["/manproduct", "/profile","/cart"];
     const shouldHideSearch = hideSearchOn.some((path) =>
         location.pathname.includes(path)
     );
@@ -69,12 +69,12 @@ function Header() {
                     </div>
 
                     <Link to={'/man'} className='nav' >
-                        Man</Link>
+                        Men</Link>
                     <Link to={"/women"} className='nav' >Women</Link>
                     <Link to={"/kids"} className='nav' >Kids</Link>
 
                     <Link to={'/manproduct'} className='newNav' id='man'>
-                        <h3 className='tag'>Man</h3> <h3 className='arrow'><IoIosArrowForward /></h3>
+                        <h3 className='tag'>Men</h3> <h3 className='arrow'><IoIosArrowForward /></h3>
                     </Link>
                     <Link to={"/women"} className='newNav' id='women'>
                         <h3 className="tag">Woman</h3><h3 className='arrow'><IoIosArrowForward /></h3>
@@ -128,9 +128,12 @@ function Header() {
          <p className='nav2'>Cart</p>
          </div> */}
                     <Link to="/cart" className="cart">
-                        <TiShoppingCart id="cartI" />
+                    <div> <TiShoppingCart id="cartI" />
+                    {totalItems > 0 && <span className="cart-count">{totalItems}</span>}
+                    </div>
+                       
                         <p className="nav2">Cart</p>
-                        {totalItems > 0 && <span className="cart-count">{totalItems}</span>}
+                        
                     </Link>
 
                     {/* <button>login</button> */}

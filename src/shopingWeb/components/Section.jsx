@@ -40,6 +40,7 @@ function Section() {
 
         <Swiper className='mainSwiper' navigation={true} pagination={true} autoplay={true} slidesPerView={1} spaceBetween={0} modules={[Navigation, Pagination, Autoplay]} >
           <SwiperSlide className='swiperSlide'>
+            
             <div className="banner1">
               <div className="Bpart1">
 
@@ -128,49 +129,53 @@ function Section() {
             },
           }}>
           <SwiperSlide className='swiperslide'>
-            <div className="BG1">
-              <Link to={"/man"}>
+            <Link to={"/man"}> <div className="BG1">
+             
                 <div className="tittle">
                   <h2>Spring Style</h2>
                   <button>Explore Now</button>
-                </div></Link>
-            </div>
+                </div>
+            </div></Link>
           </SwiperSlide>
+
           <SwiperSlide>
+             <Link to={"/women"}>
             <div className="BG2">
-              <Link to={"/women"}>
                 <div className="tittle">
                   <h2>25% Off Items</h2>
                   <button>Explore Now</button>
-                </div></Link>
-            </div>
+                </div>
+            </div></Link>
           </SwiperSlide>
+
           <SwiperSlide>
+            <Link to={"/man"}>
             <div className="BG3">
-              <Link to={"/man"}>
                 <div className="tittle">
                   <h2>New Arrivals</h2>
                   <button>Explore Now</button>
-                </div></Link>
-            </div>
+                </div>
+            </div></Link>
           </SwiperSlide>
+
           <SwiperSlide>
+            <Link to={"/man"}>
             <div className="BG4">
-              <Link to={"/man"}>
                 <div className="tittle">
                   <h2>New Arrivals</h2>
                   <button>Explore Now</button>
-                </div></Link>
-            </div>
+                </div>
+            </div></Link>
           </SwiperSlide>
+
           <SwiperSlide>
+            <Link to={"/man"}>
             <div className="BG5">
-              <Link to={"/man"}>
                 <div className="tittle">
                   <h2>Spring Style</h2>
                   <button>Explore Now</button>
-                </div></Link>
-            </div>
+                </div>
+            </div></Link>
           </SwiperSlide>
 
         </Swiper></div>

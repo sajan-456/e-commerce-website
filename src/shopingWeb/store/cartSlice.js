@@ -13,8 +13,10 @@ const cartSlice = createSlice({
       const existing = state.cartItems.find((item) => item.id === product.id);
       if (existing) {
         existing.quantity += 1;
+        alert("Add Successfull")
       } else {
         state.cartItems.push({ ...product, quantity: 1 });
+        alert("Add Successfull")
       }
     },
     removeFromCart: (state, action) => {

@@ -84,29 +84,26 @@
     overflow: hidden;
 }
 
-.trend h3 {
+.trendH {
     font-size: 30px;
     color: rgb(227, 106, 20);
     margin: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 2px lightgray;
+    font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-
-.trendSlide {
-    /* height: 400px; */
-    width: 400%;
-    display: flex;
-    animation: Tslide 10s step-start infinite;
 }
 
 .trendImg {
     /* height: 400px; */
-    width: 21%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0px 2%;
     object-fit: cover;
+    margin-top: 25px;
 }
 
 @keyframes Tslide {
@@ -331,12 +328,14 @@
 
     .trend {
         padding: 0px;
+        margin-top: 10px;
+        padding-top: 10px;
         /* height: 700px; */
 
     }
-    .trend h3{
-        font-size: 22px;
-        background:linear-gradient(to right, white, skyblue, white)
+    .trendH{
+        font-size: 20px;
+        background:linear-gradient(to right, rgb(166, 165, 165), skyblue, white)
     }
     .trendSlide {
         align-items: center;
@@ -346,7 +345,7 @@
 
     .trendImg {
         /* height: 570px; */
-        width: 25%;
+       
         padding: 0px;
         gap: 5px;
         flex-wrap: wrap;
@@ -473,34 +472,33 @@
 
     .trend {
         padding-top: 20px;
-        height: 870px;
 
     }
 
-    .trendSlide {
-        margin-top: 10px;
-        align-items: center;
-        height: 790px;
-    }
+   
 
-    .trendImg {
+    /* .trendImg {
         height: 790px;
         width: 25%;
         padding: 0px;
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
-    }
+    } */
 
     .Timg {
-        width: 300px;
-        height: 390px;
+        width: 170px;
+        height: 250px;
         box-shadow: none;
     }
 
     .Timg img {
         width: 90%;
         height: 85%;
+    }
+    .Timg h4{
+        font-size:15px;
+        line-height: 15px;
     }
 
     .dealsImg {

@@ -31,8 +31,8 @@ function Women() {
                     <img src="" alt="" />
                 </div>
             </div> */}
-            <div className="main">
-            <h1>Kids-section.....</h1><br/>
+            <div className="wSection">
+            <h1>women-section.....</h1><br/>
             <h2>Available Soon</h2>
         </div>
         </>

@@ -1,4 +1,7 @@
 
+.cartdiv{
+    height: 100vh;
+}
 .mainCart{
     padding: 10px 5px;
     width: 100%;
